@@ -1,0 +1,280 @@
+.heroPictureSection {
+  position: relative;
+  background-color: var(--grey);
+}
+
+.heroContent {
+  position: relative;
+  z-index: var(--z-index-hero-container);
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: var(--z-index-hero-video-overlay);
+}
+
+.heroTitle {
+  color: var(--white);
+  text-align: center;
+}
+
+.heroDescription {
+  color: var(--white);
+  text-align: center;
+  max-width: 75%;
+}
+
+.courseCategories a {
+  text-decoration: none;
+}
+
+.courseCategoriesCard h4 {
+  color: var(--secondaryLight);
+}
+
+.courseCategoriesCard p {
+  color: var(--white);
+}
+
+.courseCategoriesCard:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+}
+
+/* Standard Courses */
+
+.standardCoursesPreviewSection {
+  background-color: var(--primary);
+}
+
+.standardCoursesPreviewSection a {
+  text-decoration: none;
+}
+
+.standardCoursesPreviewSection a:hover {
+  text-decoration: underline;
+}
+
+/* Trending Courses */
+
+.trendingCoursesPreviewSection a {
+  text-decoration: none;
+}
+
+.trendingCoursesPreviewSection {
+  background-color: var(--accent);
+}
+
+.trendingCoursesPreviewSection a:hover {
+  text-decoration: underline;
+}
+
+/* Exclusive Courses */
+
+.exclusiveCoursesPreviewSection a {
+  text-decoration: none;
+}
+
+.exclusiveCoursesPreviewSection {
+  background-color: var(--white);
+}
+
+.exclusiveCoursesPreviewSection a:hover {
+  text-decoration: underline;
+}
+
+/* Standard Courses Page CSS */
+
+.standardCoursesHeroPictureSection {
+  position: relative;
+  background-color: var(--grey);
+}
+
+.standardCoursesHeroPictureSection .courseCategoriesCard h4 {
+  color: var(--white);
+}
+
+/* Standard Courses Page - School Kids Section */
+
+.schoolKidsCoursesPreviewSection {
+  background-color: var(--primary);
+}
+
+/* Standard Courses Page - School Teens Section */
+
+.schoolTeensCoursesPreviewSection {
+  background-color: var(--white);
+}
+
+/* Standard Courses Page - College Students Section */
+
+.collegeCoursesPreviewSection {
+  background-color: var(--primary);
+}
+
+/* Standard Courses Page - Professionals Section */
+
+.professionalsCoursesPreviewSection {
+  background-color: var(--white);
+}
+
+/* Trending Courses Page CSS */
+
+.trendingCoursesHeroPictureSection {
+  position: relative;
+  background-color: var(--grey);
+}
+
+.trendingCoursesHeroPictureSection .courseCategoriesCard h4 {
+  color: var(--white);
+}
+
+/* Trending Courses Page CSS */
+
+.trendingCoursePreviewSectionOverlayContent {
+  position: relative;
+  z-index: var(--z-index-hero-container);
+}
+
+.trendingCoursePreviewSectionOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: var(--z-index-hero-video-overlay);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.bigPreviewContent h2 {
+  font-size: 48px;
+  color: var(--black);
+  text-align: center;
+}
+
+@media (max-width: 1200px) and (min-width: 744px) {
+  .bigPreviewContent h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 743px) {
+  .bigPreviewContent h2 {
+    font-size: 32px;
+  }
+}
+
+/* Trending Courses Page CSS - AI Section */
+
+.aiCoursePreviewSection {
+  background-color: var(--white);
+}
+
+/* Trending Courses Page CSS - DataScience Section */
+
+.dataScienceCoursePreviewSection {
+  background-color: var(--primary);
+}
+
+/* Trending Courses Page CSS - CloudComputing Section */
+
+.cloudComputingCoursePreviewSection {
+  background-color: var(--white);
+}
+
+/* Trending Courses Page CSS - Cybersecurity Section */
+
+.cybersecurityCoursePreviewSection {
+  background-color: var(--primary);
+}
+
+/* Trending Courses Page CSS - Web and mobile Section */
+
+.webAndMobileCoursePreviewSection {
+  background-color: var(--white);
+}
+
+/* Trending Courses Page CSS - Block chain Section */
+
+.blockChainCoursePreviewSection {
+  background-color: var(--primary);
+}
+
+/* Trending Courses Page CSS - IOT Section */
+
+.iotCoursePreviewSection {
+  background-color: var(--white);
+}
+
+/* Exclusive Courses Page CSS */
+
+.exclusiveCoursesHeroPictureSection {
+  position: relative;
+  background-color: var(--grey);
+}
+
+.exclusiveCoursesHeroPictureSection .courseCategoriesCard h4 {
+  color: var(--white);
+}
+
+/* Exclusive Courses Page CSS - AI + Creativity Section */
+
+.aiCreativityCoursePreviewSection {
+  background-color: var(--white);
+}
+/* Exclusive Courses Page CSS - AI Assistant Section */
+
+.aiAssistantCoursePreviewSection {
+  background-color: var(--primary);
+}
+/* Exclusive Courses Page CSS - Whatsapp bot Section */
+
+.whatsAppBotCoursePreviewSection {
+  background-color: var(--white);
+}
+/* Exclusive Courses Page CSS - No-Code Product Section */
+
+.noCodeProductCoursePreviewSection {
+  background-color: var(--primary);
+}
+/* Exclusive Courses Page CSS - Entrepreneurs Section */
+
+.entrepreneursCoursePreviewSection {
+  background-color: var(--white);
+}
+/* Exclusive Courses Page CSS - Healthcare Section */
+
+.healthcareCoursePreviewSection {
+  background-color: var(--primary);
+}
+/* Exclusive Courses Page CSS - Game Design Section */
+
+.gameDesignCoursePreviewSection {
+  background-color: var(--white);
+}
+
+.gameDesignCoursePreviewSection h2 {
+  color: var(--grey);
+}
+/* Exclusive Courses Page CSS - Quantum Computing Section */
+
+.quantumComputingCoursePreviewSection {
+  background-color: var(--primary);
+}
+/* Exclusive Courses Page CSS - Space App Section */
+
+.spaceDataCoursePreviewSection {
+  background-color: var(--white);
+}
+
+.spaceDataCoursePreviewSection h2 {
+  color: var(--grey);
+}

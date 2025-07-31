@@ -1,0 +1,153 @@
+.heroVideoSection {
+  position: relative;
+  height: var(--viewportHeightHeroDesktop);
+  overflow: hidden;
+}
+
+.heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% center;
+  z-index: var(--z-index-hero-video);
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: var(--z-index-hero-video-overlay);
+}
+
+.heroContent {
+  position: relative;
+  z-index: var(--z-index-hero-container);
+}
+
+.heroTitle {
+  color: var(--white);
+}
+
+.heroDescription {
+  color: var(--white);
+}
+
+/* USP Section */
+
+.uspSection {
+  background-color: var(--white);
+}
+
+.uspSection h2 {
+  color: var(--secondary);
+}
+
+/* Popular Courses Section */
+
+.popularCoursesSection {
+  background-color: var(--black);
+}
+
+.popularCoursesSection h2 {
+  color: var(--secondary);
+}
+
+/* Testimonials */
+
+.testimonials {
+  background-color: var(--primary);
+}
+
+.testimonials h2 {
+  color: var(--white);
+}
+
+/* How It Works Section */
+
+.howItWorks {
+  background-color: var(--white);
+}
+
+.howItWorks h2 {
+  color: var(--primary);
+}
+.howItWorks h3 {
+  color: var(--white);
+}
+
+/* Highlights Section */
+
+.highlights {
+  background-color: var(--secondary);
+}
+
+.highlights h2 {
+  color: var(--white);
+}
+
+.highlights h3 {
+  color: var(--primary);
+}
+
+/* Mentorship Section */
+
+.mentorship {
+  background-color: var(--black);
+}
+
+.mentorship h3 {
+  color: var(--white);
+}
+
+.mentorship p {
+  color: var(--white);
+}
+
+/* Blog Preview Section */
+
+.blogPreviewSection {
+  background-color: var(--white);
+}
+
+.blogPreviewSection a {
+  text-decoration: none;
+}
+
+.mentorshipOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+@media (max-width: 1200px) and (min-width: 744px) {
+  .heroVideoSection {
+    height: var(--viewportHeightHeroTablet);
+  }
+}
+
+@media (max-width: 743px) {
+  .heroOverlay {
+    background-color: var(--black);
+    opacity: 0.6;
+  }
+  .heroVideoSection {
+    height: var(--viewportHeightHeroMobile);
+  }
+}

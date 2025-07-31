@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--white);
+  padding: 64px 0;
+  border-top: 2px solid var(--grey);
+}
+
+.footer h4 {
+  color: var(--primary);
+}
+
+.footer h5 {
+  color: var(--primary);
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.coursesList {
+  list-style: none;
+}
+
+.personalList {
+  list-style: none;
+}
+
+.coursesList li {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer a:hover {
+  color: var(--secondary);
+}

@@ -1,0 +1,11 @@
+.pageCTA {
+  background-color: var(--primary);
+}
+.pageCTA h3 {
+  color: var(--white);
+}
+
+.pageCTA p {
+  color: var(--white);
+  text-align: center;
+}
