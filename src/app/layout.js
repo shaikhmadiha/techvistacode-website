@@ -3,7 +3,7 @@ import { ThemeProvider } from "@mui/material";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import ChatBox from "@/components/popups/Chatbox";
+import ChatBox from "@/components/popups/ChatBox";
 
 import theme from "@/theme/theme";
 
