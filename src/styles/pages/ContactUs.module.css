@@ -1,0 +1,114 @@
+.heroPictureSection {
+  position: relative;
+  background-color: var(--grey);
+}
+
+.heroContent {
+  position: relative;
+  z-index: var(--z-index-hero-container);
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: var(--z-index-hero-video-overlay);
+}
+
+.heroTitle {
+  color: var(--white);
+  text-align: center;
+  max-width: 80%;
+}
+
+.heroDescription {
+  color: var(--white);
+  text-align: center;
+  max-width: 75%;
+}
+
+/* Contact Us Form */
+
+.contactUsRegisterSection {
+  background-color: var(--white);
+}
+
+/* Contact Us Banner */
+
+.contactUsBannerSection {
+  background-color: var(--white);
+}
+
+/* Contact Us Virtual HQ */
+
+.contactUsVirtualHQSection {
+  background-color: var(--white);
+}
+
+/* Contact Us Stay Connected */
+
+.contactUsStayConnectedSection {
+  background-color: var(--white);
+}
+
+.contactUsStayConnectedSection a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+/* Contact Us Suggestion */
+
+.contactUsSuggestionSection {
+  background-color: var(--primary);
+}
+.contactUsSuggestionSection h2 {
+  color: var(--white);
+}
+.contactUsSuggestionSection p {
+  color: var(--white);
+}
+
+.bannerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.bannerOverlayToLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.bannerOverlay h3 {
+  color: var(--white);
+}
+
+.bannerOverlay p {
+  color: var(--white);
+}
+
+.bannerOverlayToLeft h3 {
+  color: var(--white);
+}
+
+.bannerOverlayToLeft p {
+  color: var(--white);
+}
