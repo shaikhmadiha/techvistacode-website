@@ -1,0 +1,81 @@
+.heroPictureSection {
+  position: relative;
+  background-color: var(--grey);
+}
+
+.heroContent {
+  position: relative;
+  z-index: var(--z-index-hero-container);
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: var(--z-index-hero-video-overlay);
+}
+
+.heroTitle {
+  color: var(--white);
+  text-align: center;
+  max-width: 80%;
+}
+
+.heroDescription {
+  color: var(--white);
+  text-align: center;
+  max-width: 75%;
+}
+
+.successMirrorHowToSection {
+  background-color: var(--white);
+}
+
+.successMirrorHowToSection h2 {
+  color: var(--primary);
+}
+
+.successMirrorHowToSection h3 {
+  color: var(--white);
+}
+
+.successMirrorGallerySection {
+  background-color: var(--grey);
+}
+
+.successMirrorGallerySection h5 {
+  color: var(--white);
+}
+
+.successMirrorBadgesSection {
+  background-color: var(--accent);
+}
+
+.successMirrorBannerSection {
+  background-color: var(--white);
+}
+
+.bannerOverlayToLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.bannerOverlayToLeft h3 {
+  color: var(--white);
+}
+
+.bannerOverlayToLeft p {
+  color: var(--white);
+}
+
