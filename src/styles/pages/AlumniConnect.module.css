@@ -1,0 +1,35 @@
+.heroPictureSection {
+  position: relative;
+  background-color: var(--grey);
+}
+
+.heroContent {
+  position: relative;
+  z-index: var(--z-index-hero-container);
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: var(--z-index-hero-video-overlay);
+}
+
+.heroTitle {
+  color: var(--white);
+  text-align: center;
+  max-width: 80%;
+}
+
+.heroDescription {
+  color: var(--white);
+  text-align: center;
+  max-width: 75%;
+}
+
+.alumniConnectFeatures {
+  background-color: var(--white);
+}
