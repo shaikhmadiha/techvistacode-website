@@ -16,7 +16,7 @@ export const headerNavItems = [
   { label: "Student Shark Tank", href: "/student-shark-tank" },
   { label: "Hire Me Zone", href: "/hire-me-zone" },
   { label: "Alumni Connect", href: "/alumni-connect" },
-  { label: "Blogs", href: "/blogs" },
+  { label: "Blogs", href: "/blog" },
 ];
 
 export const footerNavItems = [
@@ -34,7 +34,7 @@ export const footerNavItems = [
   { label: "Student Shark Tank", href: "/student-shark-tank" },
   { label: "Hire Me Zone", href: "/hire-me-zone" },
   { label: "Alumni Connect", href: "/alumni-connect" },
-  { label: "Blogs", href: "/blogs" },
+  { label: "Blogs", href: "/blog" },
 ];
 
 

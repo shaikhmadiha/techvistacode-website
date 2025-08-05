@@ -1,0 +1,86 @@
+.heroPictureSection {
+  position: relative;
+  background-color: var(--grey);
+}
+
+.heroContent {
+  position: relative;
+  z-index: var(--z-index-hero-container);
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: var(--z-index-hero-video-overlay);
+}
+
+.heroTitle {
+  color: var(--white);
+  text-align: center;
+  max-width: 80%;
+}
+
+.heroDescription {
+  color: var(--white);
+  text-align: center;
+  max-width: 75%;
+}
+
+.blogsFeaturedSection {
+  background-color: var(--white);
+}
+
+.allBlogsSection{
+    background-color: var(--white);
+}
+
+/* Individual Blog [slug] */
+
+.blogPageSection {
+  background-color: var(--white);
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.markdown p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.markdown ul,
+.markdown ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.markdown th,
+.markdown td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+}
+
+.markdown blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-left: 4px solid #ccc;
+}
