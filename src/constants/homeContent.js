@@ -8,22 +8,22 @@ import internshipPrepImage from "../../public/internship-and-prep.webp";
 
 export const uniqueSellingPointsUSP = [
   {
-    icon: <FaBookReader size={30} style={{ color: "var(--primary)" }} />,
+    icon: <FaBookReader size={30} style={{ color: "var(--white)" }} />,
     description:
       "Industry-Backed Curriculum: Learn the exact skills employers demand, with real-world projects built into every course.",
   },
   {
-    icon: <FaUserTie size={30} style={{ color: "var(--primary)" }} />,
+    icon: <FaUserTie size={30} style={{ color: "var(--white)" }} />,
     description:
       "1:1 Mentor Support: Get personalized guidance from seasoned developers every step of your journey.",
   },
   {
-    icon: <MdWorkOutline size={30} style={{ color: "var(--primary)" }} />,
+    icon: <MdWorkOutline size={30} style={{ color: "var(--white)" }} />,
     description:
       "Mock Interviews & Internships: Sharpen your interview skills and land placements at top IT firms in Pune & beyond.",
   },
   {
-    icon: <FaLaptopCode size={30} style={{ color: "var(--primary)" }} />,
+    icon: <FaLaptopCode size={30} style={{ color: "var(--white)" }} />,
     description:
       "Real-World Projects: Build a portfolio of live applications that showcase your abilities to employers.",
   },
@@ -120,39 +120,6 @@ export const highlights = [
       "Get ready for top IT internships with Internship Prep. Access mock interviews, resume tips, and placement support across Pune and India. Perfect for students and aspiring developers.",
     ctaUrl: "/internships",
     ctaText: "Get Ready",
-  },
-];
-
-export const previewBlogCards = [
-  {
-    poster: "/learn-data-science-in-2025.webp",
-    posterAlt: "Engineers in meeting",
-    category: "Data Science",
-    date: "2025-07-20",
-    title: "Learn Data Science in 2025",
-    blogUrl: "learn-data-science-in-2025",
-    summary:
-      "Discover the top skills, essential tools, and a clear roadmap you need to succeed as a data scientist this year. Learn how to stay ahead in a competitive field.",
-  },
-  {
-    poster: "/getting-started-with-aws.webp",
-    posterAlt: "Software engineer standing beside server racks",
-    category: "Cloud Computing",
-    date: "2025-07-15",
-    title: "Getting Started with AWS",
-    blogUrl: "getting-started-with-aws",
-    summary:
-      "A beginner’s guide to cloud computing with AWS. Learn the basics and launch your first EC2 instance with step-by-step instructions and helpful tips.",
-  },
-  {
-    poster: "/switching-to-an-it-career.webp",
-    posterAlt: "Men looking the monitor together",
-    category: "Upskill",
-    date: "2025-07-10",
-    title: "Switching to an IT Career",
-    blogUrl: "switching-to-an-it-career",
-    summary:
-      "Where to begin your journey into tech? Get practical advice on choosing a specialization, building your skills, and landing your first developer role.",
   },
 ];
 

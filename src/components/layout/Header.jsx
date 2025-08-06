@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -20,10 +20,21 @@ import styles from "@/styles/components/Header.module.css";
 const Header = () => {
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
   const [isGetFreeSessionOpen, setIsGetFreeSessionOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Add scroll based glass effect on header
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10); 
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      <header className={styles.header}>
+      <header className={`${styles.header} ${isScrolled ? styles.headerScrolled : ""}`}>
         <Container>
           <nav className={styles.navbar}>
             <Link href="/" className={styles.logo}>
@@ -58,6 +69,8 @@ const Header = () => {
           </nav>
         </Container>
       </header>
+      {/* Offset 79 header height, because header is position fixed*/}
+      <Box height={79}></Box>
     </>
   );
 };

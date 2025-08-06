@@ -11,11 +11,11 @@ const HomePageHighlights = ({ sectionID }) => {
   return (
     <section id={sectionID} className={styles.highlights}>
       <Container className="container-y-padding ">
-        <Box>
-          <span className="overlineText" style={{ color: "var(--primary)" }}>
-            Don't Miss
+        <Box textAlign={"left"}>
+          <span className="overlineText" style={{ color: "var(--secondary)" }}>
+            Too Good to Miss
           </span>
-          <h2>Trending Now</h2>
+          <h2 style={{ color: "var(--white)" }}>Now Trending</h2>
         </Box>
         <Grid container spacing={2} my={4}>
           {highlights.map((highlight, index) => (

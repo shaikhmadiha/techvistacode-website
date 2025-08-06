@@ -10,10 +10,12 @@ const HomePageTestimonials = ({ sectionID }) => {
     <section id={sectionID} className={styles.testimonials}>
       <Container className="container-y-padding">
         <Box textAlign={"center"}>
-          <span className="overlineText" style={{ color: "var(--secondary)" }}>
+          <span className="overlineText" style={{ color: "var(--secondaryLight)" }}>
             Rating & Reviews
           </span>
-          <h2>Real Stories, Real People</h2>
+          <h2 style={{ color: "var(--white)" }}>
+            Real Stories, Real People
+          </h2>
         </Box>
         <Box mt={4}>
           <TestimonialsSlider />

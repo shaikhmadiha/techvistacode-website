@@ -4,10 +4,10 @@
 :root {
   --desktop-max-width: 1440px;
   --tablet-max-width: 744px;
-  --mobile-max-width: 375px;
+  --mobile-max-width: 430px;
 
-  --desktop-padding: 120px;
-  --tablet-padding: 60px;
+  --desktop-padding: 60px;
+  --tablet-padding: 30px;
   --mobile-padding: 10px;
 
   --debug-border: 1px dashed red;
@@ -17,12 +17,18 @@
   --grey: #e0e0e0;
   --black: #000;
   --primary: #3b6ab3;
-  --secondary: #3bb3a0;
-  --secondaryLight: #62c2b3;
+  --secondary: #3b38a0;
+  --secondaryLight: #7a85c1;
   --secondaryDark: #297d70;
-  --secondaryDarkRGB: rgba(41, 125, 112);
+  --secondaryDarkRGB: rgba(rgba(41, 125, 112));
   --accent: #ffc857;
   --accentRGB: rgba(255, 200, 87);
+
+  --bannerOverlayGradient: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 
   --low-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   --low-light-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
@@ -39,6 +45,7 @@
   --z-index-hero-video: 0;
   --z-index-hero-video-overlay: 1;
   --z-index-hero-container: 2;
+  --z-index-header: 50;
   --z-index-header-menu: 100;
   --z-index-header-mobile-menu: 200;
   --z-index-chat-bot: 500;
@@ -65,10 +72,6 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-.debug-border {
-  border: 1px dashed blue;
 }
 
 h1 {
@@ -110,6 +113,14 @@ h5 {
 
 .container-y-padding {
   padding: 96px 0;
+}
+
+.secondarySurfaceBackground {
+  background-color: var(--white);
+  background-image: url("/css/diagonal-noise.png"),
+    linear-gradient(to bottom right, var(--secondary), var(--secondaryLight));
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 .centerContentUsingFlex {

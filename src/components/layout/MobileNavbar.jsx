@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -24,6 +24,19 @@ const MobileNavbar = () => {
     setOpen(false);
   };
 
+  // Lock scroll when mobile menu is open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
     <>
       <IconButton onClick={() => setOpen(true)}>
@@ -38,7 +51,7 @@ const MobileNavbar = () => {
             left: 0,
             width: "100vw",
             height: "100vh",
-            bgcolor: (theme) => theme.palette.primary.main,
+            bgcolor: "var(--white)",
             zIndex: "var(--z-index-header-mobile-menu)",
             display: "flex",
             flexDirection: "column",
@@ -49,7 +62,7 @@ const MobileNavbar = () => {
           className={styles.mobileNavLinks}
         >
           <IconButton
-            color="secondary"
+            color="error"
             size="large"
             onClick={closeMenu}
             sx={{

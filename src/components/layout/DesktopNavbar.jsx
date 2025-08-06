@@ -7,7 +7,6 @@ import styles from "@/styles/components/Header.module.css";
 const visibleItems = headerNavItems.slice(0, 6);
 const dropdownItems = headerNavItems.slice(6);
 
-
 const DesktopNavbar = ({ isNavMenuOpen, setIsNavMenuOpen }) => {
   return (
     <ul className={styles.navLinks}>
@@ -28,7 +27,9 @@ const DesktopNavbar = ({ isNavMenuOpen, setIsNavMenuOpen }) => {
           <ul className={styles.dropdownMenu}>
             {dropdownItems.map((item) => (
               <li key={item.href}>
-                <Link href={item.href}>{item.label}</Link>
+                <Link href={item.href} onClick={() => setIsNavMenuOpen(!isNavMenuOpen)}>
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>

@@ -48,28 +48,32 @@
   background-color: var(--white);
 }
 
-.uspSection h2 {
-  color: var(--secondary);
-}
-
 /* Popular Courses Section */
 
 .popularCoursesSection {
-  background-color: var(--black);
+  background-color: var(--secondaryLight);
 }
 
-.popularCoursesSection h2 {
-  color: var(--secondary);
+.popularCoursesSection h4 {
+  color: var(--primary);
+}
+
+.popularCoursesSection p {
+  color: var(--black);
 }
 
 /* Testimonials */
 
 .testimonials {
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
-.testimonials h2 {
-  color: var(--white);
+.testimonials h4 {
+  color: var(--secondary);
+}
+
+.testimonials p {
+  color: var(--black);
 }
 
 /* How It Works Section */
@@ -78,9 +82,6 @@
   background-color: var(--white);
 }
 
-.howItWorks h2 {
-  color: var(--primary);
-}
 .howItWorks h3 {
   color: var(--white);
 }
@@ -88,21 +89,21 @@
 /* Highlights Section */
 
 .highlights {
-  background-color: var(--secondary);
-}
-
-.highlights h2 {
-  color: var(--white);
+  background-color: var(--secondaryLight);
 }
 
 .highlights h3 {
   color: var(--primary);
 }
 
+.highlights p {
+  color: var(--primary);
+}
+
 /* Mentorship Section */
 
 .mentorship {
-  background-color: var(--black);
+  background-color: var(--secondaryLight);
 }
 
 .mentorship h3 {
@@ -113,27 +114,27 @@
   color: var(--white);
 }
 
-/* Blog Preview Section */
-
-.blogPreviewSection {
-  background-color: var(--white);
-}
-
-.blogPreviewSection a {
-  text-decoration: none;
-}
-
 .mentorshipOverlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: var(--bannerOverlayGradient);
+}
+
+/* Blog Preview Section */
+
+.blogPreviewSection {
+  background-color: var(--white);
+}
+
+.blogPreviewSection h4 {
+  color: var(--primary);
+}
+
+.blogPreviewSection p {
+  color: var(--black);
 }
 
 @media (max-width: 1200px) and (min-width: 744px) {

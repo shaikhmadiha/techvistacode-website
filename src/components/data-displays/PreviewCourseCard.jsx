@@ -10,10 +10,10 @@ const PreviewCourseCard = ({
 }) => {
   return (
     <Card
-      sx={{ maxWidth: 360, borderRadius: "var(--high-rounded)" }}
+      sx={{ maxWidth: 360, borderRadius: "var(--medium-rounded)" }}
       elevation={0}
     >
-      <CardMedia sx={{ height: 180 }} image={poster} title={posterAlt} />
+      <CardMedia sx={{ height: 240 }} image={poster} title={posterAlt} />
       <CardContent>
         <Stack spacing={2}>
           <Stack direction={"row"} justifyContent={"space-between"}>

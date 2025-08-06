@@ -10,8 +10,13 @@ const HomePageHowItWorks = ({ sectionID }) => {
     <section id={sectionID} className={styles.howItWorks}>
       <Container className="container-y-padding">
         <Box textAlign={"center"}>
-          <span className="overlineText">Success Steps</span>
-          <h2>How It Works</h2>
+          <span
+            className="overlineText"
+            style={{ color: "var(--secondaryLight)" }}
+          >
+            Clarity, Action, Success
+          </span>
+          <h2 style={{ color: "var(--secondary)" }}>The Path Forward</h2>
         </Box>
         <SuccessSteps />
       </Container>

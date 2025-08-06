@@ -26,7 +26,7 @@ export default function Home() {
           "Book your free 30-minute tech consultation and craft your personalized learning roadmap."
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Book Free Consultation"}
       />
     </>

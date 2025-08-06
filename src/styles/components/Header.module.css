@@ -1,10 +1,20 @@
 .header {
   background-color: var(--white);
   padding: 16px 0;
+  position: fixed;
+  width: 100%;
+  z-index: var(--z-index-header);
 }
 
 .header a {
   text-decoration: none;
+}
+
+.headerScrolled {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: var(--low-shadow);
 }
 
 .navbar {
@@ -40,7 +50,7 @@
 }
 .scrollableNavLinksVisualHint {
   border: 1px solid var(--grey);
-  border-radius: var(--medium-rounded);
+  border-radius: var(--low-rounded);
   padding: 8px;
   position: relative;
   box-shadow: inset 0 0px 12px var(--grey); /* Subtle inner shadow */
@@ -54,7 +64,7 @@
 }
 
 .mobileNavLinks a {
-  color: var(--white);
+  color: var(--secondary);
 }
 
 .dropdown {
