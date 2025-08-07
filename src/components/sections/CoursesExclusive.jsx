@@ -11,12 +11,12 @@ const CoursesExclusive = ({ sectionID }) => {
       <Container className="container-y-padding">
         <CourseCategoryPreviews
           subtitle={"Explore Our"}
-          subtitleColor={"var(--black)"}
+          subtitleColor={"var(--secondaryLight)"}
           title={"Exclusive Courses"}
-          titleColor={"var(--primary)"}
-          viewAllLink={"/courses/trending"}
+          titleColor={"var(--white)"}
+          viewAllLink={"/courses/exclusive"}
           linkTitle={"View All"}
-          linkColor={"var(--primary)"}
+          linkColor={"var(--white)"}
           previewCourses={previewExclusiveCourses}
         />
       </Container>

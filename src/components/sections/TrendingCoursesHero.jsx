@@ -62,7 +62,7 @@ const TrendingCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 1.0 }}
                   >
-                    <Link href="#trending-course-ai" passHref>
+                    <Link href="#artificial-intelligence" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -85,7 +85,7 @@ const TrendingCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 1.2 }}
                   >
-                    <Link href="#trending-course-data-science" passHref>
+                    <Link href="#data-science" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -108,7 +108,7 @@ const TrendingCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 1.4 }}
                   >
-                    <Link href="#trending-course-cloud-computing" passHref>
+                    <Link href="#cloud-computing" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -131,7 +131,7 @@ const TrendingCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 1.6 }}
                   >
-                    <Link href="#trending-course-cyber-security" passHref>
+                    <Link href="#cyber-security" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -154,7 +154,7 @@ const TrendingCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 1.8 }}
                   >
-                    <Link href="#trending-course-web-and-mobile" passHref>
+                    <Link href="#web-and-mobile" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -177,7 +177,7 @@ const TrendingCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 2.0 }}
                   >
-                    <Link href="#trending-course-web-and-mobile" passHref>
+                    <Link href="#web-and-mobile" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -200,7 +200,7 @@ const TrendingCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 2.2 }}
                   >
-                    <Link href="#trending-course-blockchain" passHref>
+                    <Link href="#blockchain" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -223,7 +223,7 @@ const TrendingCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 2.4 }}
                   >
-                    <Link href="#trending-course-iot" passHref>
+                    <Link href="#iot" passHref>
                       <Paper
                         variant="outlined"
                         square

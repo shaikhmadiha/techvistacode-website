@@ -11,12 +11,12 @@ const CoursesStandard = ({ sectionID }) => {
       <Container className="container-y-padding">
         <CourseCategoryPreviews
           subtitle={"Explore Our"}
-          subtitleColor={"var(--secondary)"}
+          subtitleColor={"var(--secondaryLight)"}
           title={"Standard Courses"}
-          titleColor={"var(--white)"}
+          titleColor={"var(--secondary)"}
           viewAllLink={"/courses/standard"}
           linkTitle={"View All"}
-          linkColor={"var(--white)"}
+          linkColor={"var(--secondary)"}
           previewCourses={previewStandardCourses}
         />
       </Container>

@@ -24,24 +24,20 @@ const CourseSubCategoryPreviews = ({
           </span>
           <h2 style={{ color: titleColor }}>{title}</h2>
         </Box>
-        <p  style={{ color: captionColor }}>
-          {caption}
-        </p>
+        <p style={{ color: captionColor }}>{caption}</p>
       </Stack>
-      <Grid container my={4} spacing={6}>
+      <Grid container my={4} spacing={4}>
         {previewCourses.map((previewCourse, index) => (
           <Grid
             key={`${previewCourse.title} ${index}`}
-            size={{ xs: 12, md: 6, lg: 4 }}
+            size={{ xs: 12, sm: 6, lg: 4 }}
           >
-            <Stack alignItems={"center"}>
-              <PreviewCourseCategoryCard
-                poster={previewCourse.poster}
-                posterAlt={previewCourse.posterAlt}
-                title={previewCourse.title}
-                description={previewCourse.description}
-              />
-            </Stack>
+            <PreviewCourseCategoryCard
+              poster={previewCourse.poster}
+              posterAlt={previewCourse.posterAlt}
+              title={previewCourse.title}
+              description={previewCourse.description}
+            />
           </Grid>
         ))}
       </Grid>

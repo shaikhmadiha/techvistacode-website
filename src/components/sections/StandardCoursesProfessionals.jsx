@@ -9,16 +9,16 @@ const StandardCoursesProfessionals = ({ sectionID }) => {
   return (
     <section
       id={sectionID}
-      className={styles.professionalsCoursesPreviewSection}
+      className={`${styles.professionalsCoursesPreviewSection} secondarySurfaceBackground`}
     >
       <Container className="container-y-padding">
         <CourseSubCategoryPreviews
           subtitle={"Explore Our Courses For"}
-          subtitleColor={"var(--secondary)"}
+          subtitleColor={"var(--black)"}
           title={"Working Professionals"}
-          titleColor={"var(--primary)"}
+          titleColor={"var(--white)"}
           caption={"Entrepreneurs"}
-          captionColor={"var(--secondary)"}
+          captionColor={"var(--white)"}
           previewCourses={previewStandardProfessionalsCourses}
         />
       </Container>

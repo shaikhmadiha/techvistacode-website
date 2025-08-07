@@ -38,7 +38,7 @@ const StandardCoursesHero = ({ sectionID }) => {
             container
             minHeight={"var(--viewportHeightPagesHero)"}
             alignItems={"center"}
-            spacing={2}
+            spacing={4}
           >
             <Grid size={{ xs: 12 }}>
               <motion.div
@@ -58,146 +58,169 @@ const StandardCoursesHero = ({ sectionID }) => {
                 </Stack>
               </motion.div>
             </Grid>
-            <Grid size={{ xs: 12 }} className={styles.courseCategories}>
-              <Stack
-                direction={{ xs: "column", md: "row" }}
-                justifyContent={"space-between"}
-                alignItems={"center"}
-                spacing={2}
-              >
-                <motion.div
-                  initial={{ visibility: "hidden", y: 50 }}
-                  animate={{ visibility: "visible", y: 0 }}
-                  transition={{ duration: 0.5, delay: 1.0 }}
+            <Grid size={{ xs: 12 }}>
+              <Grid container className={styles.courseCategories}>
+                <Grid
+                  size={{ xs: 12, sm: 6, md: 3 }}
+                  display={"flex"}
+                  className={styles.courseCategoriesCard}
                 >
-                  <Link href="#standard-course-school-kids" passHref>
-                    <Paper
-                      variant="outlined"
-                      sx={{
-                        p: { xs: 3, sm: 2, lg: 4 },
-                        maxWidth: 320,
-                        textAlign: "center",
-                        background: "rgba(255, 200, 87, 0.2)",
-                        backdropFilter: "blur(64px)",
-                        borderColor: "var(--accent)",
-                      }}
-                      className={styles.courseCategoriesCard}
-                    >
-                      <Stack spacing={1} alignItems={"center"}>
-                        <h4>School Kids Courses</h4>
-                        <Box width={128} height={128} position={"relative"}>
-                          <Image
-                            src={childrens}
-                            alt="a young boy and a girl"
-                            fill
-                            sizes="128px"
-                            style={{ objectFit: "cover" }}
-                          />
-                        </Box>
-                      </Stack>
-                    </Paper>
-                  </Link>
-                </motion.div>
-                <motion.div
-                  initial={{ visibility: "hidden", y: 50 }}
-                  animate={{ visibility: "visible", y: 0 }}
-                  transition={{ duration: 0.5, delay: 1.5 }}
+                  <motion.div
+                    style={{ flexGrow: 1 }}
+                    initial={{ visibility: "hidden", y: 50 }}
+                    animate={{ visibility: "visible", y: 0 }}
+                    transition={{ duration: 0.5, delay: 1.0 }}
+                  >
+                    <Link href="#school-kids" passHref>
+                      <Paper
+                        variant="outlined"
+                        square
+                        sx={{
+                          p: 4,
+                          textAlign: "center",
+                          background: "rgba(255, 255, 255, 0.4)",
+                          backdropFilter: "blur(8px)",
+                          height: "100%",
+                        }}
+                        className={styles.courseCategoriesCard}
+                      >
+                        <Stack spacing={2} alignItems={"center"}>
+                          <h4>School Kids Courses</h4>
+                          <Box width={128} height={128} position={"relative"}>
+                            <Image
+                              src={childrens}
+                              alt="a young boy and a girl"
+                              fill
+                              sizes="128px"
+                              style={{ objectFit: "cover" }}
+                            />
+                          </Box>
+                        </Stack>
+                      </Paper>
+                    </Link>
+                  </motion.div>
+                </Grid>
+                <Grid
+                  size={{ xs: 12, sm: 6, md: 3 }}
+                  display={"flex"}
+                  className={styles.courseCategoriesCard}
                 >
-                  <Link href="#standard-course-school-teens" passHref>
-                    <Paper
-                      variant="outlined"
-                      sx={{
-                        p: { xs: 3, sm: 2, lg: 4 },
-                        maxWidth: 320,
-                        textAlign: "center",
-                        background: "rgba(255, 200, 87, 0.2)",
-                        backdropFilter: "blur(64px)",
-                        borderColor: "var(--accent)",
-                      }}
-                      className={styles.courseCategoriesCard}
-                    >
-                      <Stack spacing={1} alignItems={"center"}>
-                        <h4>School Senior Courses</h4>
-                        <Box width={128} height={128} position={"relative"}>
-                          <Image
-                            src={teen}
-                            alt="a teenage boy"
-                            fill
-                            sizes="128px"
-                            style={{ objectFit: "cover" }}
-                          />
-                        </Box>
-                      </Stack>
-                    </Paper>
-                  </Link>
-                </motion.div>
-                <motion.div
-                  initial={{ visibility: "hidden", y: 50 }}
-                  animate={{ visibility: "visible", y: 0 }}
-                  transition={{ duration: 0.5, delay: 2.0 }}
+                  <motion.div
+                    style={{ flexGrow: 1 }}
+                    initial={{ visibility: "hidden", y: 50 }}
+                    animate={{ visibility: "visible", y: 0 }}
+                    transition={{ duration: 0.5, delay: 1.5 }}
+                  >
+                    <Link href="#school-teens" passHref>
+                      <Paper
+                        variant="outlined"
+                        square
+                        sx={{
+                          p: 4,
+                          textAlign: "center",
+                          background: "rgba(255, 255, 255, 0.4)",
+                          backdropFilter: "blur(8px)",
+                          height: "100%",
+                        }}
+                        className={styles.courseCategoriesCard}
+                      >
+                        <Stack spacing={2} alignItems={"center"}>
+                          <h4>School Senior Courses</h4>
+                          <Box width={128} height={128} position={"relative"}>
+                            <Image
+                              src={teen}
+                              alt="a teenage boy"
+                              fill
+                              sizes="128px"
+                              style={{ objectFit: "cover" }}
+                            />
+                          </Box>
+                        </Stack>
+                      </Paper>
+                    </Link>
+                  </motion.div>
+                </Grid>
+                <Grid
+                  size={{ xs: 12, sm: 6, md: 3 }}
+                  display={"flex"}
+                  className={styles.courseCategoriesCard}
                 >
-                  <Link href="#standard-course-college" passHref>
-                    <Paper
-                      variant="outlined"
-                      sx={{
-                        p: { xs: 3, sm: 2, lg: 4 },
-                        maxWidth: 320,
-                        textAlign: "center",
-                        background: "rgba(255, 200, 87, 0.2)",
-                        backdropFilter: "blur(64px)",
-                        borderColor: "var(--accent)",
-                      }}
-                      className={styles.courseCategoriesCard}
-                    >
-                      <Stack spacing={1} alignItems={"center"}>
-                        <h4>Degree Level Courses</h4>
-                        <Box width={128} height={128} position={"relative"}>
-                          <Image
-                            src={student}
-                            alt="a college girl with books"
-                            fill
-                            sizes="128px"
-                            style={{ objectFit: "cover" }}
-                          />
-                        </Box>
-                      </Stack>
-                    </Paper>
-                  </Link>
-                </motion.div>
-                <motion.div
-                  initial={{ visibility: "hidden", y: 50 }}
-                  animate={{ visibility: "visible", y: 0 }}
-                  transition={{ duration: 0.5, delay: 2.5 }}
+                  <motion.div
+                    style={{ flexGrow: 1 }}
+                    initial={{ visibility: "hidden", y: 50 }}
+                    animate={{ visibility: "visible", y: 0 }}
+                    transition={{ duration: 0.5, delay: 2.0 }}
+                  >
+                    <Link href="#college-students" passHref>
+                      <Paper
+                        variant="outlined"
+                        square
+                        sx={{
+                          p: 4,
+                          textAlign: "center",
+                          background: "rgba(255, 255, 255, 0.4)",
+                          backdropFilter: "blur(8px)",
+                          height: "100%",
+                        }}
+                        className={styles.courseCategoriesCard}
+                      >
+                        <Stack spacing={2} alignItems={"center"}>
+                          <h4>Degree Level Courses</h4>
+                          <Box width={128} height={128} position={"relative"}>
+                            <Image
+                              src={student}
+                              alt="a college girl with books"
+                              fill
+                              sizes="128px"
+                              style={{ objectFit: "cover" }}
+                            />
+                          </Box>
+                        </Stack>
+                      </Paper>
+                    </Link>
+                  </motion.div>
+                </Grid>
+                <Grid
+                  size={{ xs: 12, sm: 6, md: 3 }}
+                  display={"flex"}
+                  className={styles.courseCategoriesCard}
                 >
-                  <Link href="#standard-course-professionals" passHref>
-                    <Paper
-                      variant="outlined"
-                      sx={{
-                        p: { xs: 3, sm: 2, lg: 4 },
-                        maxWidth: 320,
-                        textAlign: "center",
-                        background: "rgba(255, 200, 87, 0.2)",
-                        backdropFilter: "blur(64px)",
-                        borderColor: "var(--accent)",
-                      }}
-                      className={styles.courseCategoriesCard}
-                    >
-                      <Stack spacing={1} alignItems={"center"}>
-                        <h4>Professional Courses</h4>
-                        <Box width={128} height={128} position={"relative"}>
-                          <Image
-                            src={professionals}
-                            alt="a team of professionals"
-                            fill
-                            sizes="128px"
-                            style={{ objectFit: "cover" }}
-                          />
-                        </Box>
-                      </Stack>
-                    </Paper>
-                  </Link>
-                </motion.div>
-              </Stack>
+                  <motion.div
+                    style={{ flexGrow: 1 }}
+                    initial={{ visibility: "hidden", y: 50 }}
+                    animate={{ visibility: "visible", y: 0 }}
+                    transition={{ duration: 0.5, delay: 2.5 }}
+                  >
+                    <Link href="#working-professionals" passHref>
+                      <Paper
+                        variant="outlined"
+                        square
+                        sx={{
+                          p: 4,
+                          textAlign: "center",
+                          background: "rgba(255, 255, 255, 0.4)",
+                          backdropFilter: "blur(8px)",
+                          height: "100%",
+                        }}
+                        className={styles.courseCategoriesCard}
+                      >
+                        <Stack spacing={2} alignItems={"center"}>
+                          <h4>Professional Courses</h4>
+                          <Box width={128} height={128} position={"relative"}>
+                            <Image
+                              src={professionals}
+                              alt="a team of professionals"
+                              fill
+                              sizes="128px"
+                              style={{ objectFit: "cover" }}
+                            />
+                          </Box>
+                        </Stack>
+                      </Paper>
+                    </Link>
+                  </motion.div>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </div>

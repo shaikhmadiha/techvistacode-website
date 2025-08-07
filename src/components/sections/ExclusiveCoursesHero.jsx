@@ -45,8 +45,8 @@ const ExclusiveCoursesHero = ({ sectionID }) => {
                     Explore Our Exclusive Programs
                   </h1>
                   <p className={styles.heroDescription}>
-                    Master in-demand domains driving innovation and careers—AI,
-                    Data Science, Cloud, Cybersecurity, and more.
+                    Unique, project-driven courses you won’t find anywhere
+                    else—designed to ignite innovation and creativity.
                   </p>
                   <CapsuleDash thickness="16px" />
                 </Stack>
@@ -60,7 +60,7 @@ const ExclusiveCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 1.0 }}
                   >
-                    <Link href="#exclusive-course-ai-art" passHref>
+                    <Link href="#ai-art" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -83,7 +83,7 @@ const ExclusiveCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 1.2 }}
                   >
-                    <Link href="#exclusive-course-ai-assistant" passHref>
+                    <Link href="#ai-assistant" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -106,7 +106,7 @@ const ExclusiveCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 1.4 }}
                   >
-                    <Link href="#exclusive-course-whatsapp-bot" passHref>
+                    <Link href="#whatsapp-bot" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -129,7 +129,7 @@ const ExclusiveCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 1.6 }}
                   >
-                    <Link href="#exclusive-course-no-code" passHref>
+                    <Link href="#no-code" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -152,7 +152,7 @@ const ExclusiveCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 1.8 }}
                   >
-                    <Link href="#exclusive-course-ai-entrepreneurs" passHref>
+                    <Link href="#ai-entrepreneurs" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -175,7 +175,7 @@ const ExclusiveCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 2.0 }}
                   >
-                    <Link href="#exclusive-course-ai-healthcare" passHref>
+                    <Link href="#ai-healthcare" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -198,7 +198,7 @@ const ExclusiveCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 2.2 }}
                   >
-                    <Link href="#exclusive-course-game-design" passHref>
+                    <Link href="#game-design" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -221,7 +221,7 @@ const ExclusiveCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 2.4 }}
                   >
-                    <Link href="#exclusive-course-quantum-computing" passHref>
+                    <Link href="#quantum-computing" passHref>
                       <Paper
                         variant="outlined"
                         square
@@ -244,7 +244,7 @@ const ExclusiveCoursesHero = ({ sectionID }) => {
                     animate={{ visibility: "visible", y: 0 }}
                     transition={{ duration: 0.5, delay: 2.6 }}
                   >
-                    <Link href="#exclusive-course-space-data" passHref>
+                    <Link href="#space-data" passHref>
                       <Paper
                         variant="outlined"
                         square

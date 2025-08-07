@@ -8,21 +8,21 @@ import PageCTA from "@/components/layout/PageCTA";
 const page = () => {
   return (
     <>
-      <StandardCoursesHero sectionID={"standard-course-hero"} />
-      <StandardCoursesSchoolKids sectionID={"standard-course-school-kids"} />
-      <StandardCoursesSchoolTeens sectionID={"standard-course-school-teens"} />
-      <StandardCoursesCollege sectionID={"standard-course-college"} />
+      <StandardCoursesHero sectionID={"hero"} />
+      <StandardCoursesSchoolKids sectionID={"school-kids"} />
+      <StandardCoursesSchoolTeens sectionID={"school-teens"} />
+      <StandardCoursesCollege sectionID={"college-students"} />
       <StandardCoursesProfessionals
-        sectionID={"standard-course-professionals"}
+        sectionID={"working-professionals"}
       />
       <PageCTA
-        pageId={"standard-course-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Ready to begin?"}
         ctaSubTitle={
           "Book your free orientation session and select your course track today."
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Book Free Session"}
       />
     </>

@@ -16,11 +16,17 @@ const PageCTA = ({
   btnVariant,
   btnColor,
   btnTitle,
+  textured = false,
 }) => {
   const [isGetFreeSessionOpen, setIsGetFreeSessionOpen] = useState(false);
 
   return (
-    <section id={pageId} className={styles.pageCTA}>
+    <section
+      id={pageId}
+      className={`${styles.pageCTA} ${
+        textured ? "secondarySurfaceBackground" : ""
+      }`}
+    >
       <Container className="container-y-padding">
         <Box
           minHeight={"320px"}

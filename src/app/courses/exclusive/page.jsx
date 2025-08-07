@@ -5,27 +5,28 @@ import PageCTA from "@/components/layout/PageCTA";
 const page = () => {
   return (
     <>
-      <ExclusiveCoursesHero sectionID={"exclusive-course-hero"} />
+      <ExclusiveCoursesHero sectionID={"hero"} />
       <ExclusiveCoursesAll
-        firstSectionID={"exclusive-course-ai-art"}
-        secondSectionID={"exclusive-course-ai-assistant"}
-        thirdSectionID={"exclusive-course-whatsapp-bot"}
-        fourthSectionID={"exclusive-course-no-code"}
-        fifthSectionID={"exclusive-course-ai-entrepreneurs"}
-        sixthSectionID={"exclusive-course-ai-healthcare"}
-        seventhSectionID={"exclusive-course-game-design"}
-        eightSectionID={"exclusive-course-quantum-computing"}
-        ninthSectionID={"exclusive-course-space-data"}
+        firstSectionID={"ai-art"}
+        secondSectionID={"ai-assistant"}
+        thirdSectionID={"whatsapp-bot"}
+        fourthSectionID={"no-code"}
+        fifthSectionID={"ai-entrepreneurs"}
+        sixthSectionID={"ai-healthcare"}
+        seventhSectionID={"game-design"}
+        eightSectionID={"quantum-computing"}
+        ninthSectionID={"space-data"}
       />
       <PageCTA
-        pageId={"exclusive-courses-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Ready to innovate?"}
         ctaSubTitle={
           "Book your free orientation session and select your course track today."
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Book Free Session"}
+        textured
       />
     </>
   );

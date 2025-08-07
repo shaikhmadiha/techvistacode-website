@@ -9,16 +9,16 @@ const PreviewCourseCategoryCard = ({
   return (
     <Card
       sx={{
-        maxWidth: 360,
-        borderRadius: "var(--high-rounded)",
+        borderRadius: "var(--medium-rounded)",
         boxShadow: "var(--low-shadow)",
+        height: "100%",
       }}
     >
       <CardMedia sx={{ height: 240 }} image={poster} title={posterAlt} />
       <CardContent>
         <Stack spacing={2}>
-          <h4>{title}</h4>
-          <p>{description}</p>
+          <h4 style={{ color: "var(--primary)" }}>{title}</h4>
+          <p style={{ color: "var(--black)" }}>{description}</p>
         </Stack>
       </CardContent>
     </Card>

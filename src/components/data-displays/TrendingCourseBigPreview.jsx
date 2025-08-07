@@ -10,7 +10,7 @@ const TrendingCourseBigPreview = ({ poster, posterAlt, trendingCourse }) => {
       bgcolor={"var(--grey)"}
       minHeight={600}
       position={"relative"}
-      borderRadius={"var(--high-rounded)"}
+      borderRadius={"var(--medium-rounded)"}
       overflow={"clip"}
       boxShadow={"var(--medium-shadow)"}
     >

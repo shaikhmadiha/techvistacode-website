@@ -5,25 +5,26 @@ import PageCTA from "@/components/layout/PageCTA";
 const page = () => {
   return (
     <>
-      <TrendingCoursesHero sectionID={"trending-course-hero"} />
+      <TrendingCoursesHero sectionID={"hero"} />
       <TrendingCoursesAll
-        firstSectionID={"trending-course-ai"}
-        secondSectionID={"trending-course-data-science"}
-        thirdSectionID={"trending-course-cloud-computing"}
-        fourthSectionID={"trending-course-cyber-security"}
-        fifthSectionID={"trending-course-web-and-mobile"}
-        sixthSectionID={"trending-course-blockchain"}
-        seventhSectionID={"trending-course-iot"}
+        firstSectionID={"artificial-intelligence"}
+        secondSectionID={"data-science"}
+        thirdSectionID={"cloud-computing"}
+        fourthSectionID={"cyber-security"}
+        fifthSectionID={"web-and-mobile"}
+        sixthSectionID={"blockchain"}
+        seventhSectionID={"iot"}
       />
       <PageCTA
-        pageId={"trending-courses-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Ready to dive in?"}
         ctaSubTitle={
           "Book your free orientation session and select your course track today."
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Book Free Consultation"}
+        textured
       />
     </>
   );

@@ -11,11 +11,11 @@ const StandardCoursesSchoolKids = ({ sectionID }) => {
       <Container className="container-y-padding">
         <CourseSubCategoryPreviews
           subtitle={"Explore Our Courses For"}
-          subtitleColor={"var(--accent)"}
+          subtitleColor={"var(--secondaryLight)"}
           title={"School Students"}
-          titleColor={"var(--white)"}
+          titleColor={"var(--secondary)"}
           caption={"(Grade 5–10)"}
-          captionColor={"var(--accent)"}
+          captionColor={"var(--secondary)"}
           previewCourses={previewStandardSchoolKidsCourses}
         />
       </Container>

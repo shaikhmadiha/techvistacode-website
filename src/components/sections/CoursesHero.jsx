@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import * as motion from "motion/react-client";
+
 import { Grid, Paper, Stack } from "@mui/material";
 
 import Container from "@/components/layout/Container";
@@ -29,7 +30,7 @@ const CoursesHero = ({ sectionID }) => {
             container
             minHeight={"var(--viewportHeightPagesHero)"}
             alignItems={"center"}
-            spacing={2}
+            spacing={4}
           >
             <Grid size={{ xs: 12 }}>
               <motion.div
@@ -51,92 +52,111 @@ const CoursesHero = ({ sectionID }) => {
                 </Stack>
               </motion.div>
             </Grid>
-            <Grid size={{ xs: 12 }} className={styles.courseCategories}>
-              <Stack
-                direction={{ xs: "column", sm: "row" }}
-                justifyContent={"space-between"}
-                alignItems={"center"}
-                spacing={2}
-              >
-                <motion.div
-                  initial={{ visibility: "hidden", y: 50 }}
-                  animate={{ visibility: "visible", y: 0 }}
-                  transition={{ duration: 0.5, delay: 1.0 }}
+            <Grid size={{ xs: 12 }}>
+              <Grid container className={styles.courseCategories}>
+                <Grid
+                  size={{ xs: 12, md: 4 }}
+                  display={"flex"}
+                  className={styles.courseCategoriesCard}
                 >
-                  <Link href="/courses/standard" passHref>
-                    <Paper
-                      variant="outlined"
-                      sx={{
-                        p: { xs: 3, sm: 2, lg: 4 },
-                        maxWidth: 320,
-                        textAlign: "center",
-                        background: "rgba(41, 125, 112, 0.2)",
-                        backdropFilter: "blur(64px)",
-                      }}
-                      className={styles.courseCategoriesCard}
-                    >
-                      <h4>Standard Courses</h4>
-                      <br />
-                      <p>
-                        Foundational tech skills for school, college, and
-                        professionals to kickstart their careers.
-                      </p>
-                    </Paper>
-                  </Link>
-                </motion.div>
-                <motion.div
-                  initial={{ visibility: "hidden", y: 50 }}
-                  animate={{ visibility: "visible", y: 0 }}
-                  transition={{ duration: 0.5, delay: 1.5 }}
+                  <motion.div
+                    style={{ flexGrow: 1 }}
+                    initial={{ visibility: "hidden", y: 50 }}
+                    animate={{ visibility: "visible", y: 0 }}
+                    transition={{ duration: 0.5, delay: 1.0 }}
+                  >
+                    <Link href="/courses/#standard-preview" passHref>
+                      <Paper
+                        variant="outlined"
+                        square
+                        sx={{
+                          p: 5,
+                          textAlign: "center",
+                          background: "rgba(255, 255, 255, 0.4)",
+                          backdropFilter: "blur(8px)",
+                          height: "100%",
+                        }}
+                      >
+                        <Stack spacing={2}>
+                          <h4>Standard Courses</h4>
+                          <p>
+                            Foundational tech skills for school, college, and
+                            professionals to kickstart their careers.
+                          </p>
+                        </Stack>
+                      </Paper>
+                    </Link>
+                  </motion.div>
+                </Grid>
+                <Grid
+                  size={{ xs: 12, md: 4 }}
+                  display={"flex"}
+                  className={styles.courseCategoriesCard}
                 >
-                  <Link href="/courses/trending" passHref>
-                    <Paper
-                      variant="outlined"
-                      sx={{
-                        p: { xs: 3, sm: 2, lg: 4 },
-                        maxWidth: 320,
-                        textAlign: "center",
-                        background: "rgba(41, 125, 112, 0.2)",
-                        backdropFilter: "blur(64px)",
-                      }}
-                      className={styles.courseCategoriesCard}
-                    >
-                      <h4>Trending Courses</h4>
-                      <br />
-                      <p>
-                        Stay ahead with in-demand tech like AI, Security, and
-                        DevOps powering the future.
-                      </p>
-                    </Paper>
-                  </Link>
-                </motion.div>
-                <motion.div
-                  initial={{ visibility: "hidden", y: 50 }}
-                  animate={{ visibility: "visible", y: 0 }}
-                  transition={{ duration: 0.5, delay: 2.0 }}
+                  <motion.div
+                    style={{ flexGrow: 1 }}
+                    initial={{ visibility: "hidden", y: 50 }}
+                    animate={{ visibility: "visible", y: 0 }}
+                    transition={{ duration: 0.5, delay: 1.5 }}
+                  >
+                    <Link href="/courses/#trending-preview" passHref>
+                      <Paper
+                        variant="outlined"
+                        square
+                        sx={{
+                          p: 5,
+                          textAlign: "center",
+                          background: "rgba(255, 255, 255, 0.4)",
+                          backdropFilter: "blur(8px)",
+                          height: "100%",
+                        }}
+                      >
+                        <Stack spacing={2}>
+                          <h4>Trending Courses</h4>
+                          <p>
+                            Stay ahead with in-demand tech like AI, Security,
+                            and DevOps powering the future.
+                          </p>
+                        </Stack>
+                      </Paper>
+                    </Link>
+                  </motion.div>
+                </Grid>
+                <Grid
+                  size={{ xs: 12, md: 4 }}
+                  display={"flex"}
+                  className={styles.courseCategoriesCard}
                 >
-                  <Link href="/courses/exclusive" passHref>
-                    <Paper
-                      variant="outlined"
-                      sx={{
-                        p: { xs: 3, sm: 2, lg: 4 },
-                        maxWidth: 320,
-                        textAlign: "center",
-                        background: "rgba(41, 125, 112, 0.2)",
-                        backdropFilter: "blur(64px)",
-                      }}
-                      className={styles.courseCategoriesCard}
-                    >
-                      <h4>Exclusive Courses</h4>
-                      <br />
-                      <p>
-                        Hands-on, niche AI + tech experiences like no-code apps,
-                        prompt engineering.
-                      </p>
-                    </Paper>
-                  </Link>
-                </motion.div>
-              </Stack>
+                  <motion.div
+                    style={{ flexGrow: 1 }}
+                    initial={{ visibility: "hidden", y: 50 }}
+                    animate={{ visibility: "visible", y: 0 }}
+                    transition={{ duration: 0.5, delay: 2.0 }}
+                  >
+                    <Link href="/courses/#exclusive-preview" passHref>
+                      <Paper
+                        variant="outlined"
+                        square
+                        sx={{
+                          p: 5,
+                          textAlign: "center",
+                          background: "rgba(255, 255, 255, 0.4)",
+                          backdropFilter: "blur(8px)",
+                          height: "100%",
+                        }}
+                      >
+                        <Stack spacing={2}>
+                          <h4>Exclusive Courses</h4>
+                          <p>
+                            Hands-on, niche AI + tech experiences like no-code
+                            apps, prompt engineering.
+                          </p>
+                        </Stack>
+                      </Paper>
+                    </Link>
+                  </motion.div>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </div>

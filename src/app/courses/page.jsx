@@ -7,19 +7,20 @@ import PageCTA from "@/components/layout/PageCTA";
 export default function Courses() {
   return (
     <>
-      <CoursesHero sectionID={"courses-hero"} />
-      <CoursesStandard sectionID={"courses-standard-preview"} />
-      <CoursesTrending sectionID={"courses-trending-preview"} />
-      <CoursesExclusive sectionID={"courses-exclusive-preview"} />
+      <CoursesHero sectionID={"hero"} />
+      <CoursesStandard sectionID={"standard-preview"} />
+      <CoursesTrending sectionID={"trending-preview"} />
+      <CoursesExclusive sectionID={"exclusive-preview"} />
       <PageCTA
-        pageId={"courses-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Ready to start learning?"}
         ctaSubTitle={
           "Pick your path, enroll in a free orientation session, and start coding in minutes—no prior experience needed."
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Book Free Consultation"}
+        textured
       />
     </>
   );

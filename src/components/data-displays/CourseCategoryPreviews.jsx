@@ -5,6 +5,8 @@ import { Box, Grid, Stack } from "@mui/material";
 import PreviewCourseCategoryCard from "@/components/data-displays/PreviewCourseCategoryCard";
 import PreviewCourseCategoryCardHorizontal from "@/components/data-displays/PreviewCourseCategoryCardHorizontal";
 
+import styles from "@/styles/pages/Courses.module.css";
+
 const CourseCategoryPreviews = ({
   subtitle,
   subtitleColor,
@@ -25,31 +27,35 @@ const CourseCategoryPreviews = ({
         alignItems={"center"}
       >
         <Box textAlign={"left"}>
-          <span className="overlineText" style={{ color: subtitleColor  }}>
+          <span className="overlineText" style={{ color: subtitleColor }}>
             {subtitle}
           </span>
-          <h2 style={{ color: titleColor  }}>{title}</h2>
+          <h2 style={{ color: titleColor }}>{title}</h2>
         </Box>
-        <Link style={{ color: linkColor  }} href={viewAllLink}>{linkTitle}</Link>
+        <Link
+          style={{ color: linkColor }}
+          href={viewAllLink}
+          className={styles.courseCategoryPreviewViewAllLink}
+        >
+          {linkTitle} <span>🡕</span>
+        </Link>
       </Stack>
-      <Grid container my={4} spacing={{ xs: 4, lg: 0 }}>
+      <Grid container my={4} spacing={4}>
         {firstThree.map((previewCourse, index) => (
           <Grid
             key={`${previewCourse.title} ${index}`}
             size={{ xs: 12, lg: 4 }}
           >
-            <Stack alignItems={"center"}>
-              <PreviewCourseCategoryCard
-                poster={previewCourse.poster}
-                posterAlt={previewCourse.posterAlt}
-                title={previewCourse.title}
-                description={previewCourse.description}
-              />
-            </Stack>
+            <PreviewCourseCategoryCard
+              poster={previewCourse.poster}
+              posterAlt={previewCourse.posterAlt}
+              title={previewCourse.title}
+              description={previewCourse.description}
+            />
           </Grid>
         ))}
 
-        <Grid size={{ xs: 12 }} px={2} mt={{ xs: 0, lg: 4 }}>
+        <Grid size={{ xs: 12 }}>
           <PreviewCourseCategoryCardHorizontal
             poster={fourth[0].poster}
             posterAlt={fourth[0].posterAlt}
