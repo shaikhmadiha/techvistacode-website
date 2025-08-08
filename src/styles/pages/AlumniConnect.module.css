@@ -33,3 +33,7 @@
 .alumniConnectFeatures {
   background-color: var(--white);
 }
+
+.alumniConnectFeatures h3 {
+  color: var(--secondary);
+}

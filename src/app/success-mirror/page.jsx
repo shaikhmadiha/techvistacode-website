@@ -7,11 +7,11 @@ import SuccessMirrorBanner from "@/components/sections/SuccessMirrorBanner";
 export default function SuccessMirror() {
   return (
     <>
-      <SuccessMirrorHero sectionID={"success-mirror-hero"} />
-      <SuccessMirrorHowTo sectionID={"success-mirror-how-to"} />
-      <SuccessMirrorGallery sectionID={"success-mirror-gallery"} />
-      <SuccessMirrorBadges sectionID={"success-mirror-badges"} />
-      <SuccessMirrorBanner sectionID={"success-mirror-your-turn"} />
+      <SuccessMirrorHero sectionID={"hero"} />
+      <SuccessMirrorHowTo sectionID={"how-to"} />
+      <SuccessMirrorGallery sectionID={"gallery"} />
+      <SuccessMirrorBadges sectionID={"badges"} />
+      <SuccessMirrorBanner sectionID={"your-turn"} />
     </>
   );
 }

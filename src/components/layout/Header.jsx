@@ -58,7 +58,7 @@ const Header = () => {
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <GetFreeSessionPopup
                 variant={"contained"}
-                color={"primary"}
+                color={"secondary"}
                 open={isGetFreeSessionOpen}
                 setOpen={setIsGetFreeSessionOpen}
               />

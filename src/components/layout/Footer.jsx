@@ -8,12 +8,15 @@ import { Grid, Stack } from "@mui/material";
 import Container from "@/components/layout/Container";
 
 import { footerNavItems, socialLinks } from "@/constants/links";
+import { emailId, phoneNumber } from "@/constants/fixedStats";
 
 import techVistaCodeLogo from "../../../public/techvistacode.svg";
 
 import styles from "@/styles/components/Footer.module.css";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className={styles.footer}>
       <Container>
@@ -32,7 +35,7 @@ const Footer = () => {
               </Link>
               <h4>Tech Vista Code</h4>
               <p className="caption">
-                © 2025 TechVistaCode. <br />
+                © {currentYear} TechVistaCode. <br />
                 All rights reserved
               </p>
             </Stack>
@@ -98,9 +101,9 @@ const Footer = () => {
             <Stack spacing={4}>
               <h5>Contact</h5>
               <Stack spacing={1}>
-                <a href="tel:+1234567890">+1 (234) 567-890</a>
-                <a href="mailto:contact@techvistacode.com">
-                  contact@techvistacode.com
+                <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+                <a href={`mailto:${emailId}`}>
+                  {emailId}
                 </a>
               </Stack>
               <h5>Follow Us</h5>

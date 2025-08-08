@@ -4,12 +4,12 @@ const PreviewInternshipCards = ({ poster, posterAlt, title, description }) => {
   return (
     <Card
       sx={{
-        maxWidth: 360,
-        borderRadius: "var(--high-rounded)",
+        borderRadius: "var(--medium-rounded)",
+        height: "100%",
       }}
       elevation={1}
     >
-      <CardMedia sx={{ height: 180 }} image={poster} title={posterAlt} />
+      <CardMedia sx={{ height: 240 }} image={poster} title={posterAlt} />
       <CardContent>
         <Stack spacing={2}>
           <h4>{title}</h4>

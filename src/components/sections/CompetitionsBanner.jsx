@@ -22,7 +22,7 @@ const CompetitionsBanner = ({ sectionID }) => {
         >
           <Image
             src={competitionsBanner}
-            alt="Girl doing mentorship"
+            alt="A monitor with programming and sci fi visuals"
             fill
             style={{ objectFit: "cover" }}
           />

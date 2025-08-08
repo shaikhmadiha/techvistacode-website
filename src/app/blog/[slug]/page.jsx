@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+
 import { Box, Stack } from "@mui/material";
 
 import Container from "@/components/layout/Container";
@@ -65,7 +66,7 @@ export default async function Page({ params }) {
         ctaTitle={"Next Steps"}
         ctaSubTitle={`Ready to start? Check out our ${metadata.tag} Course and Book a Free Session`}
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Book Free Session"}
       />
     </>

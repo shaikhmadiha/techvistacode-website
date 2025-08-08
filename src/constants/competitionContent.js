@@ -46,8 +46,9 @@ export const trackOptionsCompetitionsRegister = [
 ];
 
 export const flashCodingArenaPageContent = {
-  pageHeroTitle: "Flash Coding Arena: Monthly Live Coding Battles",
-  pageHeroSubTitle:
+  pageHeroTitle: "Flash Coding Arena",
+  pageHeroSubTitle: "Monthly Live Coding Battles",
+  pageHeroDescription:
     "Test your skills in Python, Cybersecurity, and AI/ML challenges. Win exciting gadgets, cash prizes, and prestige. Next battle starts in",
 
   upcomingEventTitle: "Python Showdown",

@@ -16,7 +16,15 @@ const AboutUsBlogFeatures = ({ sectionID }) => {
   return (
     <section id={sectionID} className={styles.aboutUsBlogFeaturesSection}>
       <Container className="container-y-padding">
-        <Grid container justifyContent={"space-between"} spacing={1}>
+        <Box textAlign={"center"}>
+          <span className="overlineText" style={{ color: "var(--white)" }}>
+            Our Blog
+          </span>
+          <h2 style={{ color: "var(--white)" }}>
+            Features
+          </h2>
+        </Box>
+        <Grid container justifyContent={"space-between"} spacing={1} mt={5}>
           <Grid size={{ xs: 6, lg: 2 }}>
             <Paper
               variant="outlined"

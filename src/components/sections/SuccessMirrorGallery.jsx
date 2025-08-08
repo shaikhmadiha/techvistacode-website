@@ -13,16 +13,18 @@ const SuccessMirrorGallery = ({ sectionID }) => {
     <section id={sectionID} className={styles.successMirrorGallerySection}>
       <Container className="container-y-padding">
         <Box textAlign={"center"} mb={10}>
-          <span className="overlineText">Explore</span>
-          <h2>Our Success Gallery</h2>
+          <span className="overlineText" style={{ color: "var(--secondary)" }}>
+            Explore
+          </span>
+          <h2 style={{ color: "var(--secondary)" }}>Our Success Gallery</h2>
         </Box>
-        <Grid container spacing={8}>
+        <Grid container spacing={12}>
           {successMirrorGallery.map((item, index) => (
             <Grid
               key={`${item.name} ${index}`}
               size={{ xs: 12, md: 4 }}
               p={4}
-              borderRadius={"var(--high-rounded)"}
+              borderRadius={"var(--medium-rounded)"}
               bgcolor={"var(--white)"}
               boxShadow={"var(--low-shadow)"}
             >
@@ -40,7 +42,12 @@ const SuccessMirrorGallery = ({ sectionID }) => {
                   style={{ objectFit: "cover" }}
                 />
               </Box>
-              <Stack mt={2} spacing={4}>
+              <Stack
+                mt={2}
+                spacing={4}
+                height={"100%"}
+                justifyContent={"space-between"}
+              >
                 <Stack
                   direction={"row"}
                   spacing={2}
@@ -66,7 +73,11 @@ const SuccessMirrorGallery = ({ sectionID }) => {
                   alignItems={"center"}
                   justifyContent={"center"}
                 >
-                  <h5>{item.winningTitle}</h5>
+                  <span
+                    className="overlineText"
+                  >
+                    {item.winningTitle}
+                  </span>
                 </Box>
               </Stack>
             </Grid>

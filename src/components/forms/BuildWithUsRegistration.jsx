@@ -4,7 +4,7 @@ import { Button, MenuItem, Stack, TextField } from "@mui/material";
 
 import { buildWithUsOptions } from "@/constants/buildWithUsContent";
 
-const BuildWithUsRegistration = () => {
+const BuildWithUsRegistration = ({ themeColor }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -15,6 +15,7 @@ const BuildWithUsRegistration = () => {
     <form onSubmit={handleSubmit}>
       <Stack spacing={2} textAlign={"center"}>
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="name"
@@ -24,6 +25,7 @@ const BuildWithUsRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="email"
@@ -33,6 +35,7 @@ const BuildWithUsRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="idea"
@@ -45,6 +48,7 @@ const BuildWithUsRegistration = () => {
           rows={4}
         />
         <TextField
+          color={themeColor}
           margin="dense"
           id="category"
           name="category"
@@ -58,8 +62,13 @@ const BuildWithUsRegistration = () => {
             </MenuItem>
           ))}
         </TextField>
-        <Button disableElevation variant="contained" type="submit">
-          Help Me
+        <Button
+          color={themeColor}
+          disableElevation
+          variant="contained"
+          type="submit"
+        >
+          Help Me Build
         </Button>
       </Stack>
     </form>

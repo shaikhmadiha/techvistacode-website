@@ -14,7 +14,7 @@ const StandardCoursesProfessionals = ({ sectionID }) => {
       <Container className="container-y-padding">
         <CourseSubCategoryPreviews
           subtitle={"Explore Our Courses For"}
-          subtitleColor={"var(--black)"}
+          subtitleColor={"var(--white)"}
           title={"Working Professionals"}
           titleColor={"var(--white)"}
           caption={"Entrepreneurs"}

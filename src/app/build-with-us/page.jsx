@@ -8,19 +8,19 @@ import PageCTA from "@/components/layout/PageCTA";
 export default function BuildWithUs() {
   return (
     <>
-      <BuildWithUsHero sectionID={"build-with-us-hero"} />
-      <BuildWithUsBanner sectionID={"build-with-us-banner"} />
-      <BuildWithUsCategories sectionID={"build-with-us-categories"} />
-      <BuildWithUsFeatures sectionID={"build-with-us-features"} />
-      <BuildWithUsRegister sectionID={"build-with-us-register"} />
+      <BuildWithUsHero sectionID={"hero"} />
+      <BuildWithUsBanner sectionID={"banner"} />
+      <BuildWithUsCategories sectionID={"categories"} />
+      <BuildWithUsFeatures sectionID={"features"} />
+      <BuildWithUsRegister sectionID={"register"} />
       <PageCTA
-        pageId={"build-with-us-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Ready to Build with Us?"}
         ctaSubTitle={
           "Have a project in mind? Discover how we bring websites, apps, AI tools, and custom software to life."
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Start Your Project"}
       />
     </>

@@ -34,28 +34,33 @@
   background-color: var(--white);
 }
 
-.successMirrorHowToSection h2 {
-  color: var(--primary);
-}
-
 .successMirrorHowToSection h3 {
   color: var(--white);
 }
 
 .successMirrorGallerySection {
-  background-color: var(--grey);
+  background-color: var(--secondaryLight);
 }
 
-.successMirrorGallerySection h5 {
+.successMirrorGallerySection h4 {
+  color: var(--secondary);
+}
+
+.successMirrorGallerySection p {
+  color: var(--black);
+}
+
+.successMirrorGallerySection span {
   color: var(--white);
 }
 
+
 .successMirrorBadgesSection {
-  background-color: var(--accent);
+  background-color: var(--white);
 }
 
 .successMirrorBannerSection {
-  background-color: var(--white);
+  background-color: var(--secondary);
 }
 
 .bannerOverlayToLeft {
@@ -64,11 +69,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: var(--bannerOverlayGradientToLeft);
 }
 
 .bannerOverlayToLeft h3 {
@@ -78,4 +79,3 @@
 .bannerOverlayToLeft p {
   color: var(--white);
 }
-

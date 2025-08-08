@@ -35,7 +35,7 @@
 }
 
 .allBlogsSection{
-    background-color: var(--white);
+    background-color: var(--secondaryLight);
 }
 
 /* Individual Blog [slug] */

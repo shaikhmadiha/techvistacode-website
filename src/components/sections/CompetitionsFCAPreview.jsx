@@ -23,10 +23,13 @@ const CompetitionsLCAPreview = ({ sectionID }) => {
     <section id={sectionID} className={styles.fcaPreviewSection}>
       <Container className="container-y-padding">
         <Box textAlign={"center"}>
-          <span className="overlineText" style={{ color: "var(--primary)" }}>
+          <span
+            className="overlineText"
+            style={{ color: "var(--white)" }}
+          >
             Flash Coding Arena
           </span>
-          <h2>Upcoming Tracks</h2>
+          <h2 style={{ color: "var(--white)" }}>Upcoming Tracks</h2>
         </Box>
         <Grid container my={4} spacing={2}>
           {liveCodingArenaCards.map((liveCodingArenaCard, index) => (
@@ -40,7 +43,7 @@ const CompetitionsLCAPreview = ({ sectionID }) => {
                   elevation={1}
                 >
                   <CardMedia
-                    sx={{ height: 240 }}
+                    sx={{ height: 360 }}
                     image={liveCodingArenaCard.poster}
                     title={liveCodingArenaCard.posterAlt}
                   />

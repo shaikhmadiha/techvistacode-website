@@ -11,7 +11,7 @@ const StandardCoursesCollege = ({ sectionID }) => {
       <Container className="container-y-padding">
         <CourseSubCategoryPreviews
           subtitle={"Explore Our Courses For"}
-          subtitleColor={"var(--secondaryLight)"}
+          subtitleColor={"var(--white)"}
           title={"University Students"}
           titleColor={"var(--white)"}
           caption={"UG / PG"}

@@ -13,10 +13,10 @@ const CoursesTrending = ({ sectionID }) => {
           subtitle={"Explore Our"}
           subtitleColor={"var(--secondary)"}
           title={"Trending Courses"}
-          titleColor={"var(--white)"}
+          titleColor={"var(--secondary)"}
           viewAllLink={"/courses/trending"}
           linkTitle={"View All"}
-          linkColor={"var(--white)"}
+          linkColor={"var(--secondary)"}
           previewCourses={previewTrendingCourses}
         />
       </Container>

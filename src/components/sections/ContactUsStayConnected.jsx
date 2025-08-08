@@ -33,9 +33,10 @@ const ContactUsStayConnected = ({ sectionID }) => {
                   justifyContent={"center"}
                   sx={{
                     backgroundColor: "var(--white)",
-                    borderRadius: "var(--high-rounded)",
-                    boxShadow: "var(--medium-shadow)",
+                    borderRadius: "var(--medium-rounded)",
+                    boxShadow: "var(--low-shadow)",
                   }}
+                  className="secondarySurfaceBackground"
                 >
                   <Stack alignItems={"center"} spacing={2}>
                     <Icon size={32} />

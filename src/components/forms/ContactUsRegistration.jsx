@@ -32,7 +32,7 @@ const contactChoice = [
   },
 ];
 
-const ContactUsRegistration = () => {
+const ContactUsRegistration = ({ themeColor }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -43,6 +43,7 @@ const ContactUsRegistration = () => {
     <form onSubmit={handleSubmit}>
       <Stack spacing={2} textAlign={"center"}>
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="name"
@@ -52,6 +53,7 @@ const ContactUsRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="email"
@@ -61,6 +63,7 @@ const ContactUsRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="phone"
@@ -70,6 +73,7 @@ const ContactUsRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="city"
@@ -79,6 +83,7 @@ const ContactUsRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="message"
@@ -91,6 +96,7 @@ const ContactUsRegistration = () => {
           rows={4}
         />
         <TextField
+          color={themeColor}
           margin="dense"
           id="time"
           name="time"
@@ -105,6 +111,7 @@ const ContactUsRegistration = () => {
           ))}
         </TextField>
         <TextField
+          color={themeColor}
           margin="dense"
           id="choice"
           name="choice"
@@ -118,7 +125,12 @@ const ContactUsRegistration = () => {
             </MenuItem>
           ))}
         </TextField>
-        <Button disableElevation variant="contained" type="submit">
+        <Button
+          color={themeColor}
+          disableElevation
+          variant="contained"
+          type="submit"
+        >
           Submit
         </Button>
       </Stack>

@@ -12,7 +12,7 @@ const HomePageHowItWorks = ({ sectionID }) => {
         <Box textAlign={"center"}>
           <span
             className="overlineText"
-            style={{ color: "var(--secondaryLight)" }}
+            style={{ color: "var(--secondary)" }}
           >
             Clarity, Action, Success
           </span>

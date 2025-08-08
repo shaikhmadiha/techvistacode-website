@@ -5,16 +5,16 @@ import PageCTA from "@/components/layout/PageCTA";
 export default function AlumniConnect() {
   return (
     <>
-      <AlumniConnectHero sectionID={"alumni-connect-network-hero"} />
-      <AlumniConnectFeatures sectionID={"alumni-connect-network-features"} />
+      <AlumniConnectHero sectionID={"hero"} />
+      <AlumniConnectFeatures sectionID={"features"} />
       <PageCTA
-        pageId={"alumni-connect-network-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Discover Community Impact"}
         ctaSubTitle={
           "Our Alumni Connect Network fosters emotional bonds and brand loyalty by creating a supportive ecosystem."
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Join Now"}
       />
     </>

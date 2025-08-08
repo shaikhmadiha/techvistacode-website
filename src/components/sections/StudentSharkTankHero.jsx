@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 import { Button, Grid, Stack } from "@mui/material";
 
@@ -8,22 +7,25 @@ import * as motion from "motion/react-client";
 import Container from "@/components/layout/Container";
 import CapsuleDash from "@/components/decorations/CapsuleDash";
 
-import studentSharkTankHero from "../../../public/student-shark-tank-hero.webp";
-
 import styles from "@/styles/pages/StudentSharkTank.module.css";
 
 const StudentSharkTankHero = ({ sectionID }) => {
   return (
-    <section id={sectionID} className={styles.heroPictureSection}>
-      {/* Background picture */}
-      <Image
-        src={studentSharkTankHero}
-        alt={
-          "Two person one guy and girl in front of dashboard pitching startup idea"
-        }
-        fill
-        style={{ objectFit: "cover" }}
-      />
+    <section id={sectionID} className={styles.heroVideoSection}>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline // Important for iOS devices
+        className={styles.heroVideo}
+      >
+        <source src="/studentsharktankpage-hero-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+        <img
+          src="/studentsharktankpage-hero-video-fallback.webp"
+          alt="A girl and a guy pitching their idea with a whiteboard behind them"
+        />
+      </video>
       <div className={styles.heroOverlay}></div>
       <Container className="container-y-padding">
         <div className={styles.heroContent}>

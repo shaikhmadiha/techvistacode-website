@@ -8,19 +8,19 @@ import PageCTA from "@/components/layout/PageCTA";
 export default function StudentSharkTank() {
   return (
     <>
-      <StudentSharkTankHero sectionID={"student-shark-tank-hero"} />
-      <StudentSharkTankBanner sectionID={"student-shark-tank-banner"} />
-      <StudentSharkTankHowTo sectionID={"student-shark-tank-how-to"} />
-      <StudentSharkTankRegister sectionID={"student-shark-tank-register"} />
-      <StudentSharkTankRewards sectionID={"student-shark-tank-rewards"} />
+      <StudentSharkTankHero sectionID={"hero"} />
+      <StudentSharkTankBanner sectionID={"banner"} />
+      <StudentSharkTankHowTo sectionID={"how-to"} />
+      <StudentSharkTankRegister sectionID={"register"} />
+      <StudentSharkTankRewards sectionID={"rewards"} />
       <PageCTA
-        pageId={"student-shark-tank-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Got Questions?"}
         ctaSubTitle={
           "Book your free 30-minute tech consultation and we will help you with your million dollar idea!"
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Book Free Consultation"}
       />
     </>

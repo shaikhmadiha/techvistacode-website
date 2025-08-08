@@ -32,7 +32,7 @@ export default function Blogs() {
 
   return (
     <>
-      <section id="blogs-hero" className={styles.heroPictureSection}>
+      <section id="hero" className={styles.heroPictureSection}>
         {/* Background picture */}
         <Image
           src={blogsHero}
@@ -58,9 +58,8 @@ export default function Blogs() {
                   transition={{ duration: 0.5 }}
                 >
                   <Stack spacing={{ xs: 2, sm: 3 }} alignItems={"center"}>
-                    <h1 className={styles.heroTitle}>
-                      From Our Blog – Your Tech Learning Hub
-                    </h1>
+                    <h1 className={styles.heroTitle}>From Our Blog</h1>
+                    <h2 className={styles.heroTitle}>Your Tech Learning Hub</h2>
                     <p className={styles.heroDescription}>
                       Dive into tutorials, industry insights, career guides, and
                       community stories to fuel your tech journey.
@@ -73,13 +72,16 @@ export default function Blogs() {
           </div>
         </Container>
       </section>
-      <section id="blogs-featured" className={styles.blogsFeaturedSection}>
+      <section id="featured" className={styles.blogsFeaturedSection}>
         <Container className="container-y-padding">
           <Box textAlign={"center"}>
-            <span className="overlineText" style={{ color: "var(--primary)" }}>
+            <span
+              className="overlineText"
+              style={{ color: "var(--secondary)" }}
+            >
               Check Out
             </span>
-            <h2>Featured Post</h2>
+            <h2 style={{ color: "var(--secondary)" }}>Featured Post</h2>
           </Box>
           <Grid container mt={5} spacing={2}>
             {featuredBlogs.map((blog, index) => (
@@ -118,8 +120,12 @@ export default function Blogs() {
                             variant="outlined"
                           />
                         </Stack>
-                        <h4>{blog.title}</h4>
-                        <p>{blog.description}</p>
+                        <h4 style={{ color: "var(--secondary)" }}>
+                          {blog.title}
+                        </h4>
+                        <p style={{ color: "var(--black)" }}>
+                          {blog.description}
+                        </p>
                       </Stack>
                     </CardContent>
                   </Card>
@@ -129,13 +135,13 @@ export default function Blogs() {
           </Grid>
         </Container>
       </section>
-      <section id="blogs-all" className={styles.allBlogsSection}>
+      <section id="all" className={styles.allBlogsSection}>
         <Container className="container-y-padding">
           <Box textAlign={"center"}>
-            <span className="overlineText" style={{ color: "var(--primary)" }}>
+            <span className="overlineText" style={{ color: "var(--white)" }}>
               Explore
             </span>
-            <h2>All Blogs</h2>
+            <h2 style={{ color: "var(--white)" }}>All Blogs</h2>
           </Box>
           <Grid container mt={5} spacing={2}>
             {blogs.map((blog, index) => (
@@ -174,8 +180,12 @@ export default function Blogs() {
                             variant="outlined"
                           />
                         </Stack>
-                        <h4>{blog.title}</h4>
-                        <p>{blog.description}</p>
+                        <h4 style={{ color: "var(--secondary)" }}>
+                          {blog.title}
+                        </h4>
+                        <p style={{ color: "var(--black)" }}>
+                          {blog.description}
+                        </p>
                       </Stack>
                     </CardContent>
                   </Card>
@@ -186,13 +196,13 @@ export default function Blogs() {
         </Container>
       </section>
       <PageCTA
-        pageId={"blogs-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Ready to change?"}
         ctaSubTitle={
           "Step into a world of learning and shape your future, Book a free session."
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Book Free Session"}
       />
     </>

@@ -9,8 +9,13 @@ const InternshipsHowTo = ({ sectionID }) => {
     <section id={sectionID} className={styles.internshipsHowToSection}>
       <Container className="container-y-padding">
         <Box textAlign={"center"}>
-          <span className="overlineText">Hurry Up</span>
-          <h2>Get Internship</h2>
+          <span
+            className="overlineText"
+            style={{ color: "var(--white)" }}
+          >
+            Hurry Up
+          </span>
+          <h2 style={{ color: "var(--white)" }}>Get Internship</h2>
         </Box>
         <SuccessSteps
           stepOneTitle="Choose Your Course"

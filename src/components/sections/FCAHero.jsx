@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import * as motion from "motion/react-client";
+
 import { Grid, Paper, Stack } from "@mui/material";
 
 import Container from "@/components/layout/Container";
@@ -43,8 +44,11 @@ const FCAHero = ({ sectionID }) => {
                   <h1 className={styles.heroTitle}>
                     {flashCodingArenaPageContent.pageHeroTitle}
                   </h1>
-                  <p className={styles.heroDescription}>
+                  <h2 className={styles.heroTitle}>
                     {flashCodingArenaPageContent.pageHeroSubTitle}
+                  </h2>
+                  <p className={styles.heroDescription}>
+                    {flashCodingArenaPageContent.pageHeroDescription}
                   </p>
                   <CapsuleDash thickness="16px" />
                 </Stack>
@@ -57,8 +61,8 @@ const FCAHero = ({ sectionID }) => {
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
                 <Paper sx={{ bgcolor: "rgba(0,0,0,0.5)", padding: 4 }}>
-                  <h3 style={{ color: "var(--white)" }}>
-                    {flashCodingArenaPageContent.upcomingEventTitle}
+                  <h3 style={{ color: "var(--accent)" }}>
+                    ⚡ {flashCodingArenaPageContent.upcomingEventTitle} ⚡
                   </h3>
                 </Paper>
                 <br />

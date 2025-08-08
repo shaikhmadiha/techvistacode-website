@@ -29,7 +29,7 @@ const HomePagePopularBlogs = ({ sectionID }) => {
         <Box textAlign={"center"}>
           <span
             className="overlineText"
-            style={{ color: "var(--black)" }}
+            style={{ color: "var(--white)" }}
           >
             The Blog Zone
           </span>

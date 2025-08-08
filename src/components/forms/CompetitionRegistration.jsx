@@ -4,7 +4,7 @@ import { Button, MenuItem, Stack, TextField } from "@mui/material";
 
 import { trackOptionsCompetitionsRegister } from "@/constants/competitionContent";
 
-const CompetitionRegistration = () => {
+const CompetitionRegistration = ({ themeColor = "primary" }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -15,6 +15,7 @@ const CompetitionRegistration = () => {
     <form onSubmit={handleSubmit}>
       <Stack spacing={2} textAlign={"center"}>
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="name"
@@ -24,6 +25,7 @@ const CompetitionRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="email"
@@ -33,6 +35,7 @@ const CompetitionRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="phone"
@@ -42,6 +45,7 @@ const CompetitionRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="city"
@@ -51,6 +55,7 @@ const CompetitionRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           margin="dense"
           id="competition"
           name="competition"
@@ -64,7 +69,12 @@ const CompetitionRegistration = () => {
             </MenuItem>
           ))}
         </TextField>
-        <Button disableElevation variant="contained" type="submit">
+        <Button
+          color={themeColor}
+          disableElevation
+          variant="contained"
+          type="submit"
+        >
           Register
         </Button>
       </Stack>

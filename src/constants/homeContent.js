@@ -61,44 +61,84 @@ export const previewCourseCards = [
 
 export const testimonials = [
   {
-    profilePicture: "/full-stack-development.webp",
-    name: "Subin R",
-    designation: "Data Analyst",
+    profilePicture: "/testimonials/yash.webp",
+    name: "Yash",
+    subTitle: "U.S.A.",
     review:
-      "I am incredibly fortunate to have had the opportunity to learn from this institution. The depth of knowledge is truly remarkable, and I can confidently say that the trainers here are outstanding. They combine expertise, passion, and commitment to make a lasting impact on their candidates.",
+      "TechVistaCode has been a game-changer for me! The trainers are amazing, the projects are hands-on, and the learning environment is super supportive. Perfect place to start or grow your tech career. Highly recommended!",
     rating: 5,
   },
   {
-    profilePicture: "/python-development.webp",
-    name: "John Doe",
-    designation: "Developer",
+    profilePicture: "/testimonials/haroon.webp",
+    name: "Haroon",
+    subTitle: "U.S.A.",
     review:
-      "The depth of knowledge is truly remarkable, and I can confidently say that the trainers here are outstanding. They combine expertise, passion, and commitment to make a lasting impact on their candidates.",
-    rating: 4,
-  },
-  {
-    profilePicture: "/data-science-and-ai.webp",
-    name: "Tim White",
-    designation: "Scientist",
-    review:
-      "The depth of knowledge is truly remarkable, and I can confidently say that the trainers here are outstanding. They combine expertise, passion, and commitment to make a lasting impact on their candidates.",
-    rating: 3,
-  },
-  {
-    profilePicture: "/full-stack-development.webp",
-    name: "Subin R",
-    designation: "Data Analyst",
-    review:
-      "I am incredibly fortunate to have had the opportunity to learn from this institution. The depth of knowledge is truly remarkable, and I can confidently say that the trainers here are outstanding. They combine expertise, passion, and commitment to make a lasting impact on their candidates.",
+      "TechVistaCode isn’t just a platform — it’s a launchpad for anyone serious about tech. The training is practical, the mentors are dedicated, and the projects truly prepare you for real industry challenges. I’m glad I chose TechVistaCode to build my future.",
     rating: 5,
   },
   {
-    profilePicture: "/data-science-and-ai.webp",
-    name: "Tim White",
-    designation: "Scientist",
+    profilePicture: "/testimonials/ghufran.webp",
+    name: "Ghufran",
+    subTitle: "Germany",
     review:
-      "The depth of knowledge is truly remarkable, and I can confidently say that the trainers here are outstanding. They combine expertise, passion, and commitment to make a lasting impact on their candidates.",
-    rating: 3,
+      "TechVistaCode helped me master both Java and Python from the ground up. The way they connect theory with real-world applications is unmatched. I worked on projects that challenged me and built confidence in both languages. If you’re serious about becoming a versatile developer, TechVistaCode is the place to start.",
+    rating: 5,
+  },
+  {
+    profilePicture: "/testimonials/vishwajeet.webp",
+    name: "Vishwajeet",
+    subTitle: "Web Developer",
+    review:
+      "Before TechVistaCode, I only knew the names — HTML, CSS, JavaScript, React. After joining, I learned how to bring ideas to life on the web. The training didn’t just teach me code, it taught me how to think like a developer. From building static pages to dynamic React apps, the journey was transformative. If you want to build real skills, not just certificates, this is where you start. ",
+    rating: 5,
+  },
+  {
+    profilePicture: "/testimonials/subin.webp",
+    name: "Subin",
+    subTitle: "Developer",
+    review:
+      "Joining TechVistaCode was the best decision I made for my tech career. I came in with doubts, but left with confidence. The trainers push you to think, build, and grow. Every concept — from frontend to backend — was taught with clarity and purpose. TechVistaCode doesn’t just teach you to code; it prepares you to stand out.",
+    rating: 5,
+  },
+  {
+    profilePicture: "/testimonials/irshad.webp",
+    name: "Irshad",
+    subTitle: "Python Developer",
+    review:
+      "TechVistaCode didn’t just teach me Python — it opened the door to a new career. The hands-on projects, expert mentorship, and real-world scenarios helped me build a strong portfolio. I now feel ready to apply for roles with confidence. It’s not just a course, it’s a career changer.",
+    rating: 5,
+  },
+  {
+    profilePicture: "/testimonials/dan.webp",
+    name: "Dan",
+    subTitle: "Uganda",
+    review:
+      "I switched from a non-tech background and TechVistaCode made that possible. The way they teach Python, AI, ML, and Data Science is truly beginner-friendly but still powerful enough to compete in the job market. I’m now confidently applying for data roles I never imagined I could.",
+    rating: 5,
+  },
+  {
+    profilePicture: "/testimonials/aditya.webp",
+    name: "Aditya",
+    subTitle: "Tech Vista Code - Internship",
+    review:
+      "The Python internship at TechVistaCode was a complete game-changer for me. I moved from basic scripts to working on real applications and automation tasks. The mentors were incredibly supportive and pushed me to think like a developer. It was more than an internship — it was a launchpad.",
+    rating: 5,
+  },
+  {
+    profilePicture: "/testimonials/shruti.webp",
+    name: "Shruti",
+    subTitle: "Tech Vista Code - Internship",
+    review:
+      "At TechVistaCode, I wasn’t just an intern — I was treated like a creative partner. As an SMC intern, I got hands-on experience with content planning, Instagram growth, and storytelling. The exposure I gained here has shaped my confidence and style as a content creator.",
+    rating: 5,
+  },
+  {
+    profilePicture: "/testimonials/shourya.webp",
+    name: "Shourya",
+    subTitle: "Tech Vista Code - Internship",
+    review:
+      "My internship at TechVistaCode was more than just a learning experience — it was a journey of growth. I was exposed to real tasks, deadlines, and collaboration that made me industry-ready. The mentorship I received helped me refine my skills and understand how to apply them in the real world. I entered as a learner and left with clarity, confidence, and purpose.",
+    rating: 5,
   },
 ];
 

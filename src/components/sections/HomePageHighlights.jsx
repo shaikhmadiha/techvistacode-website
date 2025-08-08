@@ -15,7 +15,7 @@ const HomePageHighlights = ({ sectionID }) => {
           <span className="overlineText" style={{ color: "var(--secondary)" }}>
             Too Good to Miss
           </span>
-          <h2 style={{ color: "var(--white)" }}>Now Trending</h2>
+          <h2 style={{ color: "var(--secondary)" }}>Now Trending</h2>
         </Box>
         <Grid container spacing={2} my={4}>
           {highlights.map((highlight, index) => (

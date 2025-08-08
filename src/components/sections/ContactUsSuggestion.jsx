@@ -8,14 +8,14 @@ import styles from "@/styles/pages/ContactUs.module.css";
 
 const ContactUsSuggestion = ({ sectionID }) => {
   return (
-    <section id={sectionID} className={styles.contactUsSuggestionSection}>
+    <section id={sectionID} className={`${styles.contactUsSuggestionSection} secondarySurfaceBackgroundTwo`}>
       <Container className="container-y-padding">
         <Stack spacing={1} textAlign={"center"}>
-          <span className="overlineText" style={{ color: "var(--accent)" }}>
+          <span className="overlineText" style={{ color: "var(--white)" }}>
             Bonus
           </span>
-          <h2>Suggest a Course or Feature!</h2>
-          <p>
+          <h2 style={{ color: "var(--white)" }}>Suggest a Course or Feature!</h2>
+          <p style={{ color: "var(--white)" }}>
             Got a cool idea? We’re all ears. Use this form to shape
             TechVistaCode’s future.
           </p>

@@ -9,13 +9,11 @@ const PreviewBuildWithUsCategoriesCards = ({
   return (
     <Card
       sx={{
-        // maxWidth: 360,
-        width: "100%",
-        borderRadius: "var(--high-rounded)",
+        borderRadius: "var(--medium-rounded)",
       }}
       elevation={1}
     >
-      <CardMedia sx={{ height: 180 }} image={poster} title={posterAlt} />
+      <CardMedia sx={{ height: 240 }} image={poster} title={posterAlt} />
       <CardContent>
         <Stack spacing={2}>
           <Chip label={purpose} />

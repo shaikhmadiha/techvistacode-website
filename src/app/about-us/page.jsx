@@ -13,24 +13,24 @@ import PageCTA from "@/components/layout/PageCTA";
 export default function AboutUs() {
   return (
     <>
-      <AboutUsHero sectionID={"about-us-hero"} />
-      <AboutUsBanner sectionID={"about-us-about"} />
-      <AboutUsDiffrence sectionID={"about-us-diffrence"} />
-      <AboutUsVision sectionID={"about-us-vision"} />
-      <AboutUsHowTo sectionID={"about-us-how-it-works"} />
-      <AboutUsWhyChoose sectionID={"about-us-why-choose-us"} />
-      <AboutUsCommunity sectionID={"about-us-community"} />
-      <AboutUsBlogFeatures sectionID={"about-us-blog-features"} />
-      <AboutUsPartnership sectionID={"about-us-partnership"} />
-      <AboutUsFAQ sectionID={"about-us-faq"} />
+      <AboutUsHero sectionID={"hero"} />
+      <AboutUsBanner sectionID={"about"} />
+      <AboutUsDiffrence sectionID={"diffrence"} />
+      <AboutUsVision sectionID={"vision"} />
+      <AboutUsHowTo sectionID={"how-it-works"} />
+      <AboutUsWhyChoose sectionID={"why-choose-us"} />
+      <AboutUsCommunity sectionID={"community"} />
+      <AboutUsBlogFeatures sectionID={"blog-features"} />
+      <AboutUsPartnership sectionID={"partnership"} />
+      <AboutUsFAQ sectionID={"faq"} />
       <PageCTA
-        pageId={"about-us-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Ready to join our Techverse?"}
         ctaSubTitle={
           "Step into a world of innovation and creativity, where ideas turn into cutting-edge technology."
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Book Free Session"}
       />
     </>

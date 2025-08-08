@@ -78,7 +78,7 @@ const TestimonialsSlider = () => {
                     />
                     <Stack alignItems={"start"}>
                       <h4>{testimonial.name}</h4>
-                      <p className="caption">{testimonial.designation}</p>
+                      <p className="caption">{testimonial.subTitle}</p>
                     </Stack>
                   </Stack>
                 </Box>

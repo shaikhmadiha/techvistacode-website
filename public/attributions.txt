@@ -1,5 +1,4 @@
-Hero Video - Video by Julia M Cameron: https://www.pexels.com/video/a-young-girl-attending-her-online-classes-at-home-4498849/
-Hero Video - Video by Vlada Karpovich: https://www.pexels.com/video/close-up-shot-of-a-woman-typing-on-her-laptop-8439970/
+Home Page Hero Video by Pavel Danilyuk: https://www.pexels.com/video/a-man-and-a-woman-looking-at-a-robotic-arm-8328048
 USP Section - Photo by Armin  Rimoldi: https://www.pexels.com/photo/multiethnic-students-reading-document-in-folder-5553641/
 
 Preview Course 1 - Photo by ThisIsEngineering: https://www.pexels.com/photo/woman-coding-on-computer-3861958/
@@ -14,7 +13,7 @@ Preview Blog 1 - Photo by ThisIsEngineering: https://www.pexels.com/photo/engine
 Preview Blog 2 - Photo by Christina Morillo: https://www.pexels.com/photo/software-engineer-standing-beside-server-racks-1181354/
 Preview Blog 3 - Photo by Mikhail Nilov: https://www.pexels.com/photo/men-looking-the-monitor-together-7988752/
 
-
+Course Hero Video - Video by Michelangelo Buonarroti: https://www.pexels.com/video/a-woman-wearing-vr-goggles-8762946/
 Courses Hero - Photo by Vanessa Garcia : https://www.pexels.com/photo/photo-of-professor-teahcing-his-student-6325984/
 
 Preview Standard Courses 1 - Photo by Pavel Danilyuk: https://www.pexels.com/photo/students-listening-to-their-teacher-8423012/
@@ -74,7 +73,9 @@ Exclusive Course - Space Data App - Photo by SpaceX: https://www.pexels.com/phot
 
 Competitions Hero - Photo by Mikhail Nilov: https://www.pexels.com/photo/photo-of-a-man-with-a-beanie-typing-on-a-keyboard-6963945/
 
-Competitions Banner - Photo by Lukas: https://www.pexels.com/photo/person-encoding-in-laptop-574071/
+Competitions Banner - Photo by Tima Miroshnichenko: https://www.pexels.com/photo/close-up-view-of-system-hacking-5380642/
+
+Competitions Banner Register - Photo by Pixabay: https://www.pexels.com/photo/person-holding-white-paper-326569/
 
 Competitions - Rewards Section - Photo by RDNE Stock project: https://www.pexels.com/photo/medals-tied-on-a-trophy-7005693/
 
@@ -83,10 +84,6 @@ Flash Coding Arena Hero - Photo by cottonbro studio: https://www.pexels.com/phot
 Internship Page Hero - Photo by fauxels: https://www.pexels.com/photo/photo-of-people-doing-handshakes-3184416/
 
 Internship Banner - Photo by fauxels: https://www.pexels.com/photo/photo-of-people-near-wooden-table-3184418/
-
-2 months internship - Photo by Luis Quintero: https://www.pexels.com/photo/person-holding-black-backpack-3731256/
-3 months internship - Photo by Ono  Kosuki: https://www.pexels.com/photo/black-man-in-elegant-outfit-taking-taxi-5647640/
-6 months internship - Photo by Christina Morillo: https://www.pexels.com/photo/photo-of-woman-pointing-on-white-paper-1181487/
 
 Build With Us Hero - Photo by fauxels: https://www.pexels.com/photo/group-of-people-gathered-around-wooden-table-3184360/
 
@@ -115,6 +112,8 @@ Contact Us - Virtual HQ - Photo by Beyzaa Yurtkuran: https://www.pexels.com/phot
 Success Mirror - Home - Photo by Andrea Piacquadio: https://www.pexels.com/photo/photo-of-woman-looking-at-the-mirror-774866/
 
 Student Shark Tank - Hero - Photo by RDNE Stock project: https://www.pexels.com/photo/woman-in-black-jacket-holding-white-printer-paper-7414268/
+
+Student Shark Tank - Hero Video - Video by RDNE Stock project: https://www.pexels.com/video/marketing-landscape-man-people-7414127/
 
 Student Shark Tank - Banner - Photo by Teemu R: https://www.pexels.com/photo/black-microphone-1840320/
 

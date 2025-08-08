@@ -15,10 +15,10 @@ const AlumniConnectFeatures = ({ sectionID }) => {
     <section id={sectionID} className={styles.alumniConnectFeatures}>
       <Container className="container-y-padding">
         <Box textAlign={"center"}>
-          <span className="overlineText" style={{ color: "var(--primary)" }}>
+          <span className="overlineText" style={{ color: "var(--secondary)" }}>
             Explore
           </span>
-          <h2>Our Alumni Network</h2>
+          <h2 style={{ color: "var(--secondary)" }}>Our Alumni Network</h2>
         </Box>
         <Grid container spacing={4} mt={10}>
           <Grid size={{ xs: 12, md: 6 }} display={"flex"} alignItems={"center"}>
@@ -33,7 +33,7 @@ const AlumniConnectFeatures = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--accent)"}
+            bgcolor={"var(--secondaryLight)"}
           >
             <Image
               src={pastLearner}
@@ -54,7 +54,7 @@ const AlumniConnectFeatures = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--accent)"}
+            bgcolor={"var(--secondaryLight)"}
           >
             <Image
               src={communityBond}
@@ -86,7 +86,7 @@ const AlumniConnectFeatures = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--accent)"}
+            bgcolor={"var(--secondaryLight)"}
           >
             <Image
               src={coffeeWithCoder}
@@ -107,7 +107,7 @@ const AlumniConnectFeatures = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--accent)"}
+            bgcolor={"var(--secondaryLight)"}
           >
             <Image
               src={askMeAnything}

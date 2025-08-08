@@ -20,7 +20,7 @@ const HomePagePopularCourses = ({ sectionID }) => {
           >
             Chosen by thousands
           </span>
-          <h2 style={{ color: "var(--white)" }}>
+          <h2 style={{ color: "var(--secondary)" }}>
             Courses You’ll Love
           </h2>
         </Box>

@@ -20,7 +20,7 @@ const HomePageUSP = ({ sectionID }) => {
             <Box textAlign={"left"}>
               <span
                 className="overlineText"
-                style={{ color: "var(--secondaryLight)" }}
+                style={{ color: "var(--secondary)" }}
               >
                 What Sets Us Apart
               </span>

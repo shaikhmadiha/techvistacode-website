@@ -13,9 +13,9 @@ const StandardCoursesSchoolTeens = ({ sectionID }) => {
           subtitle={"Explore Our Courses For"}
           subtitleColor={"var(--secondary)"}
           title={"HighSchool Students"}
-          titleColor={"var(--white)"}
+          titleColor={"var(--secondary)"}
           caption={"(Grade 11–12)"}
-          captionColor={"var(--white)"}
+          captionColor={"var(--secondary)"}
           previewCourses={previewStandardSchoolTeensCourses}
         />
       </Container>

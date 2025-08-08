@@ -1,22 +1,25 @@
-import { Box, Grid, Stack } from "@mui/material";
+import Image from "next/image";
 
-import goldBadge from "../../../public/gold-badge.svg";
-import silverBadge from "../../../public/silver-badge.svg";
-import bronzeBadge from "../../../public/bronze-badge.svg";
+import { Box, Grid, Stack } from "@mui/material";
 
 import Container from "@/components/layout/Container";
 
-import styles from "@/styles/pages/SuccessMirror.module.css";
-import Image from "next/image";
 import { badgeLegend } from "@/constants/successMirrorContent";
+
+import styles from "@/styles/pages/SuccessMirror.module.css";
 
 const SuccessMirrorBadges = (sectionID) => {
   return (
-    <section id={sectionID} className={styles.successMirrorBadgesSection}>
+    <section
+      id={sectionID}
+      className={`${styles.successMirrorBadgesSection} secondarySurfaceBackground`}
+    >
       <Container className="container-y-padding">
         <Box textAlign={"center"} mb={5}>
-          <span className="overlineText">What Badge's Hold</span>
-          <h2>Badge Legend</h2>
+          <span className="overlineText" style={{ color: "var(--white)" }}>
+            What Badge's Hold
+          </span>
+          <h2 style={{ color: "var(--white)" }}>Badge Legend</h2>
         </Box>
         <Grid container spacing={2}>
           {badgeLegend.map((item, index) => (
@@ -34,7 +37,7 @@ const SuccessMirrorBadges = (sectionID) => {
                 alignItems={"center"}
                 justifyContent={"center"}
               >
-                <Box height={120} width={180} position={"relative"} >
+                <Box height={120} width={180} position={"relative"}>
                   <Image
                     src={item.badgePicture}
                     alt={item.badge}

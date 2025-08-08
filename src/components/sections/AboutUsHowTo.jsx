@@ -17,10 +17,10 @@ const AboutUsHowTo = ({ sectionID }) => {
     <section id={sectionID} className={styles.aboutUsHowItWorksSection}>
       <Container className="container-y-padding">
         <Box textAlign={"center"}>
-          <span className="overlineText" style={{ color: "var(--primary)" }}>
+          <span className="overlineText" style={{ color: "var(--white)" }}>
             Find Out
           </span>
-          <h2>How Tech Vista Code Shapes Your Future</h2>
+          <h2 style={{ color: "var(--white)" }}>How Tech Vista Code Shapes Your Future</h2>
         </Box>
         <Grid container spacing={4} mt={5}>
           <Grid size={{ xs: 12, md: 6 }} display={"flex"} alignItems={"center"}>
@@ -34,7 +34,7 @@ const AboutUsHowTo = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--secondary)"}
+            bgcolor={"var(--secondaryLight)"}
           >
             <Image
               src={joinTVC}
@@ -55,7 +55,7 @@ const AboutUsHowTo = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--secondary)"}
+            bgcolor={"var(--secondaryLight)"}
           >
             <Image
               src={roadmap}
@@ -87,7 +87,7 @@ const AboutUsHowTo = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--secondary)"}
+            bgcolor={"var(--secondaryLight)"}
           >
             <Image
               src={diveIn}
@@ -108,7 +108,7 @@ const AboutUsHowTo = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--secondary)"}
+            bgcolor={"var(--secondaryLight)"}
           >
             <Image
               src={portfolio}
@@ -140,7 +140,7 @@ const AboutUsHowTo = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--secondary)"}
+            bgcolor={"var(--secondaryLight)"}
           >
             <Image
               src={launch}

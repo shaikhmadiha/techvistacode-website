@@ -6,9 +6,9 @@ import HireMeZoneMock from "@/components/sections/HireMeZoneMock";
 export default function HireMeZone() {
   return (
     <>
-      <HireMeZoneHero sectionID={"hire-me-zone-hero"} />
-      <HireMeZoneBanner sectionID={"hire-me-zone-banner"} />
-      <HireMeZoneRegister sectionID={"hire-me-zone-register"} />
+      <HireMeZoneHero sectionID={"hero"} />
+      <HireMeZoneBanner sectionID={"banner"} />
+      <HireMeZoneRegister sectionID={"register"} />
       <HireMeZoneMock />
     </>
   );

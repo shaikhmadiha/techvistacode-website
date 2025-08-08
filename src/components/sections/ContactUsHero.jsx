@@ -1,15 +1,16 @@
 import Image from "next/image";
-import Container from "@/components/layout/Container";
 
 import * as motion from "motion/react-client";
+import { Grid, Stack } from "@mui/material";
+
+import Container from "@/components/layout/Container";
+import CapsuleDash from "@/components/decorations/CapsuleDash";
+
+import { techvistacodeAIchatbot } from "@/constants/homeContent";
 
 import contactUsHello from "../../../public/contact-us-hello.webp";
 
 import styles from "@/styles/pages/ContactUs.module.css";
-import { Button, Grid, Stack } from "@mui/material";
-import CapsuleDash from "../decorations/CapsuleDash";
-import Link from "next/link";
-import { techvistacodeAIchatbot } from "@/constants/homeContent";
 
 const ContactUsHero = ({ sectionID }) => {
   return (
@@ -37,9 +38,10 @@ const ContactUsHero = ({ sectionID }) => {
                 transition={{ duration: 0.5 }}
               >
                 <Stack spacing={{ xs: 2, sm: 3 }} alignItems={"center"}>
-                  <h1 className={styles.heroTitle}>
-                    Get in Touch — Let’s Build Your Future Together
-                  </h1>
+                  <h1 className={styles.heroTitle}>Get in Touch</h1>
+                  <h2 className={styles.heroTitle}>
+                    Let’s Build Your Future Together
+                  </h2>
                   <p className={styles.heroDescription}>
                     Whether you have a question, idea, or just want to say
                     hello, we’re here and excited to connect with you. Your
@@ -64,7 +66,7 @@ const ContactUsHero = ({ sectionID }) => {
                     alt="right arrow"
                     height={50}
                     width={150}
-                    style={{transform: "rotate(-10deg)"}}
+                    style={{ transform: "rotate(-10deg)" }}
                   />
                 </Stack>
               </motion.div>

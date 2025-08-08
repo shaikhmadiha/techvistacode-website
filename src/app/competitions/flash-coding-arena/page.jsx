@@ -8,19 +8,19 @@ import PageCTA from "@/components/layout/PageCTA";
 const page = () => {
   return (
     <>
-      <FCAHero sectionID={"fca-hero"} />
-      <FCABanner sectionID={"fca-banner"} />
-      <FCAUpcoming sectionID={"fca-upcoming"} />
-      <FCARegister sectionID={"fca-register"} />
-      <FCARewards sectionID={"fca-rewards"} />
+      <FCAHero sectionID={"hero"} />
+      <FCABanner sectionID={"banner"} />
+      <FCAUpcoming sectionID={"upcoming"} />
+      <FCARegister sectionID={"register"} />
+      <FCARewards sectionID={"rewards"} />
       <PageCTA
-        pageId={"fca-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Question About Flash Coding Arena?"}
         ctaSubTitle={
           "Got questions about competitions? Find answers on rules, entries, prizes, and more—all in one place!"
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Book Free Consultation"}
       />
     </>

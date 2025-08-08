@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Box, Grid, Stack } from "@mui/material";
 
 import Container from "@/components/layout/Container";
@@ -9,17 +11,18 @@ import successLadder from "../../../public/success-ladder.webp";
 import dreamers from "../../../public/dreamers.webp";
 
 import styles from "@/styles/pages/AboutUs.module.css";
-import Image from "next/image";
 
 const AboutUsDiffrence = ({ sectionID }) => {
   return (
     <section id={sectionID} className={styles.aboutUsDiffrenceSection}>
       <Container className="container-y-padding">
         <Box textAlign={"center"}>
-          <span className="overlineText" style={{ color: "var(--primary)" }}>
+          <span className="overlineText" style={{ color: "var(--secondary)" }}>
             Learn
           </span>
-          <h2>What Makes Tech Vista Code Different?</h2>
+          <h2 style={{ color: "var(--secondary)" }}>
+            What Makes Tech Vista Code Different?
+          </h2>
         </Box>
         <Grid container spacing={4} mt={10}>
           <Grid size={{ xs: 12, md: 6 }} display={"flex"} alignItems={"center"}>
@@ -36,7 +39,7 @@ const AboutUsDiffrence = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--accent)"}
+            bgcolor={"var(--secondary)"}
           >
             <Image
               src={aiGps}
@@ -57,7 +60,7 @@ const AboutUsDiffrence = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--accent)"}
+            bgcolor={"var(--secondary)"}
           >
             <Image
               src={gamified}
@@ -91,7 +94,7 @@ const AboutUsDiffrence = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--accent)"}
+            bgcolor={"var(--secondary)"}
           >
             <Image
               src={startupGarage}
@@ -112,7 +115,7 @@ const AboutUsDiffrence = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--accent)"}
+            bgcolor={"var(--secondary)"}
           >
             <Image
               src={successLadder}
@@ -146,7 +149,7 @@ const AboutUsDiffrence = ({ sectionID }) => {
             position={"relative"}
             minHeight={384}
             borderRadius={4}
-            bgcolor={"var(--accent)"}
+            bgcolor={"var(--secondary)"}
           >
             <Image
               src={dreamers}

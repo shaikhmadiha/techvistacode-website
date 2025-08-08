@@ -1,36 +1,46 @@
 import Image from "next/image";
 
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Stack } from "@mui/material";
 
 import Container from "@/components/layout/Container";
 import InternshipsRegistration from "@/components/forms/InternshipsRegistration";
 
-import register from "../../../public/competition-register.webp";
+import formBanner from "../../../public/forms-banner.webp";
 
-import styles from "@/styles/pages/Competitions.module.css";
+import styles from "@/styles/pages/Internship.module.css";
 
 const InternshipsRegister = ({ sectionID }) => {
   return (
-    <section id={sectionID} className={styles.competitionsRegisterSection}>
-      <Container>
-        <Grid container spacing={2}>
-          <Grid size={{ xs: 12, md: 6 }}>
-            <Box
-              position={"relative"}
-            //   minHeight={400}
-              height={"100%"}
-              width={"100%"}
-            >
-              <Image
-                src={register}
-                alt="A guy from behind looking at computer monitor"
-                fill
-                style={{ objectFit: "cover" }}
-              />
-            </Box>
+    <section
+      id={sectionID}
+      className={`${styles.internshipsRegisterSection} secondarySurfaceBackgroundTwo`}
+    >
+      <Container className="container-y-padding">
+        <Grid container>
+          <Grid
+            size={{ xs: 12, md: 8 }}
+            minHeight={300}
+            display={"flex"}
+            alignItems={"center"}
+            justifyContent={"center"}
+            bgcolor={"var(--secondary)"}
+            position={"relative"}
+          >
+            <Image
+              src={formBanner}
+              alt="A person in black suit holding tech vista code business card"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+            {/* <Stack>
+              <p style={{ color: "var(--white)" }}>Apply Now!</p>
+              <h3 style={{ color: "var(--white)" }}>Kickstart Your Career!</h3>
+            </Stack> */}
           </Grid>
-          <Grid size={{ xs: 12, md: 6 }} p={{ xs: 2, md: 4 }}>
-            <InternshipsRegistration />
+          <Grid size={{ xs: 12, md: 4 }}>
+            <Box bgcolor={"var(--white)"} p={2}>
+              <InternshipsRegistration themeColor="secondary" />
+            </Box>
           </Grid>
         </Grid>
       </Container>

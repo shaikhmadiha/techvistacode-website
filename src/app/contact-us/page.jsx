@@ -9,20 +9,20 @@ import PageCTA from "@/components/layout/PageCTA";
 export default function ContactUs() {
   return (
     <>
-      <ContactUsHero sectionID={"contact-us-hero"} />
-      <ContactUsRegister sectionID={"contact-us-request"} />
-      <ContactUsBanner sectionID={"contact-us-banner"} />
-      <ContactUsVirtualHQ sectionID={"contact-us-virtual-hq"} />
-      <ContactUsSuggestion sectionID={"contact-us-registration"} />
-      <ContactUsStayConnected sectionID={"contact-us-stay-connected"} />
+      <ContactUsHero sectionID={"hero"} />
+      <ContactUsRegister sectionID={"request"} />
+      <ContactUsBanner sectionID={"banner"} />
+      <ContactUsVirtualHQ sectionID={"virtual-hq"} />
+      <ContactUsSuggestion sectionID={"registration"} />
+      <ContactUsStayConnected sectionID={"stay-connected"} />
       <PageCTA
-        pageId={"contact-us-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Ready to join our Techverse?"}
         ctaSubTitle={
           "Step into a world of innovation and creativity, where ideas turn into cutting-edge technology."
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Book Free Session"}
       />
     </>

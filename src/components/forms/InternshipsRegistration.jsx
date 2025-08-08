@@ -4,7 +4,7 @@ import { Button, MenuItem, Stack, TextField } from "@mui/material";
 
 import { durationOptionsInternshipsRegister } from "@/constants/internshipsContent";
 
-const InternshipsRegistration = () => {
+const InternshipsRegistration = ({ themeColor }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -15,6 +15,7 @@ const InternshipsRegistration = () => {
     <form onSubmit={handleSubmit}>
       <Stack spacing={2} textAlign={"center"}>
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="name"
@@ -24,6 +25,7 @@ const InternshipsRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="email"
@@ -33,6 +35,7 @@ const InternshipsRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="phone"
@@ -42,6 +45,7 @@ const InternshipsRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="course"
@@ -51,6 +55,7 @@ const InternshipsRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           margin="dense"
           id="duration"
           name="duration"
@@ -64,7 +69,12 @@ const InternshipsRegistration = () => {
             </MenuItem>
           ))}
         </TextField>
-        <Button disableElevation variant="contained" type="submit">
+        <Button
+          color={themeColor}
+          disableElevation
+          variant="contained"
+          type="submit"
+        >
           Apply
         </Button>
       </Stack>

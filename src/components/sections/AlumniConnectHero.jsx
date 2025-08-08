@@ -38,8 +38,11 @@ const AlumniConnectHero = ({ sectionID }) => {
               >
                 <Stack spacing={{ xs: 2, sm: 3 }} alignItems={"center"}>
                   <h1 className={styles.heroTitle}>
-                    Alumni Connect Network – Community-Led Career Growth
+                    Alumni Connect Network
                   </h1>
+                  <h2 className={styles.heroTitle}>
+                    Community-Led Career Growth
+                  </h2>
                   <p className={styles.heroDescription}>
                     Connect with past learners, share stories, and grow together
                     through mentorship, virtual meetups, and AMA sessions.

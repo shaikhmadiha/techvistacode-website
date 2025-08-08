@@ -5,6 +5,8 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
+import { phoneNumber } from "./fixedStats";
+
 export const headerNavItems = [
   { label: "Courses", href: "/courses" },
   { label: "Competitions", href: "/competitions" },
@@ -41,22 +43,22 @@ export const footerNavItems = [
 export const socialLinks = [
   {
     label: "Facebook",
-    href: "https://facebook.com/techvistacode",
+    href: "https://facebook.com",
     icon: FaFacebookF,
   },
   {
     label: "Instagram",
-    href: "https://instagram.com/techvistacode",
+    href: "https://instagram.com/tech_vista_code",
     icon: FaInstagram,
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/company/techvistacode",
+    href: "https://linkedin.com",
     icon: FaLinkedinIn,
   },
   {
     label: "WhatsApp",
-    href: "https://wa.me/1234567890",
+    href: `https://wa.me/${phoneNumber}`,
     icon: FaWhatsapp,
   },
 ];

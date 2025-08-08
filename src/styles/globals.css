@@ -16,9 +16,9 @@
   --white: #fff;
   --grey: #e0e0e0;
   --black: #000;
-  --primary: #3b6ab3;
-  --secondary: #3b38a0;
-  --secondaryLight: #7a85c1;
+  --primary: #2c5086;
+  --secondary: #3b6ab3;
+  --secondaryLight: #c5d5ec;
   --secondaryDark: #297d70;
   --secondaryDarkRGB: rgba(rgba(41, 125, 112));
   --accent: #ffc857;
@@ -26,6 +26,12 @@
 
   --bannerOverlayGradient: linear-gradient(
     to right,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+
+  --bannerOverlayGradientToLeft: linear-gradient(
+    to left,
     rgba(0, 0, 0, 0.8) 0%,
     rgba(0, 0, 0, 0.2) 100%
   );
@@ -118,6 +124,14 @@ h5 {
 .secondarySurfaceBackground {
   background-color: var(--white);
   background-image: url("/css/diagonal-noise.png"),
+    linear-gradient(to bottom right, var(--secondary), var(--secondaryLight));
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+.secondarySurfaceBackgroundTwo {
+  background-color: var(--white);
+  background-image: url("/css/project-paper.png"),
     linear-gradient(to bottom right, var(--secondary), var(--secondaryLight));
   background-repeat: repeat;
   background-size: auto;

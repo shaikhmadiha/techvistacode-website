@@ -8,19 +8,19 @@ import PageCTA from "@/components/layout/PageCTA";
 export default function Internships() {
   return (
     <>
-      <InternshipsHero sectionID={"internship-hero"} />
-      <InternshipsBanner sectionID={"internship-banner"} />
-      <InternshipsPrograms sectionID={"internship-programs"} />
-      <InternshipsHowTo sectionID={"internship-how-to"} />
-      <InternshipsRegister sectionID={"internship-register"} />
+      <InternshipsHero sectionID={"hero"} />
+      <InternshipsBanner sectionID={"banner"} />
+      <InternshipsPrograms sectionID={"programs"} />
+      <InternshipsHowTo sectionID={"how-to"} />
+      <InternshipsRegister sectionID={"register"} />
       <PageCTA
-        pageId={"internships-page-cta"}
+        pageId={"page-cta"}
         ctaTitle={"Questions About Internships?"}
         ctaSubTitle={
           "Curious about internship opportunities? Learn how to apply, eligibility, benefits, and everything else."
         }
         btnVariant={"contained"}
-        btnColor={"secondary"}
+        btnColor={"warning"}
         btnTitle={"Get Internship Guidance"}
       />
     </>

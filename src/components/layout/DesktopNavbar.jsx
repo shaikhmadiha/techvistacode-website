@@ -21,7 +21,7 @@ const DesktopNavbar = ({ isNavMenuOpen, setIsNavMenuOpen }) => {
           role="button"
           aria-expanded={isNavMenuOpen}
         >
-          More {isNavMenuOpen ? "▴" : "▾"}
+          Career Boosters {isNavMenuOpen ? "▴" : "▾"}
         </p>
         {isNavMenuOpen && (
           <ul className={styles.dropdownMenu}>

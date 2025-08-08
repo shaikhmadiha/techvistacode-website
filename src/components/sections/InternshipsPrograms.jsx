@@ -12,18 +12,16 @@ const InternshipsPrograms = ({ sectionID }) => {
     <section id={sectionID} className={styles.internshipsProgramsSection}>
       <Container className="container-y-padding">
         <Box textAlign={"center"}>
-          <span className="overlineText" style={{ color: "var(--primary)" }}>
+          <span className="overlineText" style={{ color: "var(--secondary)" }}>
             Explore Our
           </span>
-          <h2>Internship Programs</h2>
+          <h2 style={{ color: "var(--secondary)" }}>Internship Programs</h2>
         </Box>
         <Grid container my={4} spacing={2}>
           {internshipPrograms.map((internshipProgram, index) => (
             <Grid
               key={`${internshipProgram.title} ${index}`}
               size={{ xs: 12, lg: 4 }}
-              display={"flex"}
-              justifyContent={"center"}
             >
               <PreviewInternshipCards
                 poster={internshipProgram.poster}

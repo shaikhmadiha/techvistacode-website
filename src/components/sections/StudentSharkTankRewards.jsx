@@ -4,7 +4,7 @@ import { Box, Stack } from "@mui/material";
 
 import Container from "@/components/layout/Container";
 
-import rewardsBanner from "../../../public/gift-banner.webp";
+import rewardsBanner from "../../../public/gift-banner-1.webp";
 
 import styles from "@/styles/pages/StudentSharkTank.module.css";
 
@@ -20,7 +20,7 @@ const StudentSharkTankRewards = ({ sectionID }) => {
         >
           <Image
             src={rewardsBanner}
-            alt="A wooden surface with right side gift box"
+            alt="A wooden surface with right side gift box, items like smartphone, tablet, smartwatch, money and certificate"
             fill
             style={{ objectFit: "cover" }}
           />

@@ -37,7 +37,7 @@ const HomePageHero = ({ sectionID }) => {
         Your browser does not support the video tag.
         <img
           src="/homepage-hero-video-fallback.webp"
-          alt="A girl participating in an online class with a mentor"
+          alt="A man with beard and a girl in scientist apron looking at a robotic arm"
         />
       </video>
 
@@ -80,7 +80,7 @@ const HomePageHero = ({ sectionID }) => {
                         size="large"
                         disableElevation
                         variant="contained"
-                        color="primary"
+                        color="secondary"
                         sx={{ borderRadius: "var(--high-rounded-mui-btn)" }}
                         fullWidth
                       >
@@ -89,7 +89,7 @@ const HomePageHero = ({ sectionID }) => {
                     </Link>
                     <GetFreeSessionPopup
                       variant="contained"
-                      color="secondary"
+                      color="warning"
                       size="large"
                       isHighRounded
                       open={isGetFreeSessionOpen}

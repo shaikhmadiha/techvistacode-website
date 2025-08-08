@@ -2,8 +2,8 @@ import { Grid, Stack } from "@mui/material";
 
 import Container from "@/components/layout/Container";
 
-import RewardsSlider from "../sliders/RewardsSlider";
-import RewardText from "../data-displays/RewardText";
+import RewardsSlider from "@/components/sliders/RewardsSlider";
+import RewardText from "@/components/data-displays/RewardText";
 
 import styles from "@/styles/pages/Competitions.module.css";
 
@@ -17,7 +17,10 @@ const FCARewards = ({ sectionID }) => {
           </Grid>
           <Grid size={{ xs: 12, md: 6 }} p={{ xs: 2, md: 4 }}>
             <Stack height={"100%"} justifyContent={"center"} spacing={2}>
-              <RewardText />
+              <RewardText
+                spanColor={"var(--secondary)"}
+                headingColor={"var(--secondary)"}
+              />
             </Stack>
           </Grid>
         </Grid>

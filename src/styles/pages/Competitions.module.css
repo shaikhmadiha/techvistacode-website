@@ -3,9 +3,21 @@
   background-color: var(--grey);
 }
 
-.heroContent {
+.heroVideoSection {
   position: relative;
-  z-index: var(--z-index-hero-container);
+  height: var(--viewportHeightHeroDesktop);
+  overflow: hidden;
+}
+
+.heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% center;
+  z-index: var(--z-index-hero-video);
 }
 
 .heroOverlay {
@@ -16,6 +28,11 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: var(--z-index-hero-video-overlay);
+}
+
+.heroContent {
+  position: relative;
+  z-index: var(--z-index-hero-container);
 }
 
 .heroTitle {
@@ -39,7 +56,7 @@
 /* Section 2 */
 
 .competitionsBannerSection {
-  background-color: var(--primary);
+  background-color: var(--secondaryLight);
 }
 
 .bannerOverlay {
@@ -48,11 +65,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: var(--bannerOverlayGradient);
 }
 
 .bannerOverlay h3 {
@@ -66,11 +79,14 @@
 /* Section 3 */
 
 .fcaPreviewSection {
-  background-color: var(--black);
+  background-color: var(--secondary);
 }
 
-.fcaPreviewSection h2 {
-  color: var(--secondary);
+.fcaPreviewSection h4 {
+  color: var(--primary);
+}
+.fcaPreviewSection p {
+  color: var(--black);
 }
 
 /* Section 4 */
@@ -82,25 +98,13 @@
 /* Section 5 */
 
 .competitionsRewardsSection {
-  background-color: var(--secondary);
-}
-
-.competitionsRewardsSection h2 {
-  color: var(--white);
-}
-
-.competitionsRewardsSection p {
-  color: var(--white);
+  background-color: var(--white);
 }
 
 /* Section 6 */
 
 .competitionsHowToSection {
-  background-color: var(--white);
-}
-
-.competitionsHowToSection h2 {
-  color: var(--primary);
+  background-color: var(--secondaryLight);
 }
 
 .competitionsHowToSection h3 {
@@ -112,7 +116,7 @@
 /* FCABanner Section */
 
 .fcaBannerSection {
-  background-color: var(--primary);
+  background-color: var(--white);
 }
 
 /* FCAUpcoming Section */
@@ -150,7 +154,7 @@
 /* FCARewards Section */
 
 .fcaRewardsSection {
-  background-color: var(--secondary);
+  background-color: var(--white);
 }
 
 .fcaRewardsSection h2 {

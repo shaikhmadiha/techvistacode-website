@@ -30,8 +30,10 @@ const CompetitionsRewards = ({ sectionID }) => {
           </Grid>
           <Grid size={{ xs: 12, md: 6 }} p={{ xs: 2, md: 4 }}>
             <Stack height={"100%"} justifyContent={"center"} spacing={2}>
-              <h2>Unlock Amazing Rewards!</h2>
-              <p>
+              <h2 style={{ color: "var(--secondary)" }}>
+                Unlock Amazing Rewards!
+              </h2>
+              <p style={{ color: "var(--black)" }}>
                 Stand a chance to win exclusive prizes that elevate your
                 experience—top-tier gadgets, exciting tech, and much more! Every
                 moment brings you closer to winning something incredible.

@@ -5,32 +5,41 @@ import { Box, Grid } from "@mui/material";
 import Container from "@/components/layout/Container";
 import HireMeZoneRegistration from "@/components/forms/HireMeZoneRegistration";
 
-import register from "../../../public/competition-register.webp";
+import formBanner from "../../../public/forms-banner.webp";
 
 import styles from "@/styles/pages/HireMeZone.module.css";
 
 const HireMeZoneRegister = ({ sectionID }) => {
   return (
-    <section id={sectionID} className={styles.hireMeZoneRegister}>
+    <section id={sectionID} className={`${styles.hireMeZoneRegister} secondarySurfaceBackgroundTwo`}>
       <Container className="container-y-padding">
-        <Grid container spacing={2}>
-          <Grid size={{ xs: 12, md: 6 }}>
-            <Box
-              position={"relative"}
-              //   minHeight={400}
-              height={"100%"}
-              width={"100%"}
-            >
-              <Image
-                src={register}
-                alt="A guy from behind looking at computer monitor"
-                fill
-                style={{ objectFit: "cover" }}
-              />
-            </Box>
+        <Grid container>
+          <Grid
+            size={{ xs: 12, md: 8 }}
+            minHeight={300}
+            display={"flex"}
+            alignItems={"center"}
+            justifyContent={"center"}
+            bgcolor={"var(--secondary)"}
+            position={"relative"}
+          >
+            <Image
+              src={formBanner}
+              alt="A person in black suit holding tech vista code business card"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+            {/* <Stack>
+              <p style={{ color: "var(--white)" }}>Register Now!</p>
+              <h3 style={{ color: "var(--white)" }}>
+                One track. One shot. Go live.
+              </h3>
+            </Stack> */}
           </Grid>
-          <Grid size={{ xs: 12, md: 6 }} p={{ xs: 2, md: 4 }}>
-            <HireMeZoneRegistration />
+          <Grid size={{ xs: 12, md: 4 }}>
+            <Box bgcolor={"var(--white)"} p={2}>
+              <HireMeZoneRegistration themeColor="secondary" />
+            </Box>
           </Grid>
         </Grid>
       </Container>

@@ -10,8 +10,12 @@ const StudentSharkTankHowTo = ({ sectionID }) => {
     <section id={sectionID} className={styles.studentSharkTankHowTo}>
       <Container className="container-y-padding">
         <Box textAlign={"center"}>
-          <span className="overlineText">Learn</span>
-          <h2>How Student Shark Tank Works</h2>
+          <span className="overlineText" style={{ color: "var(--secondary)" }}>
+            Learn
+          </span>
+          <h2 style={{ color: "var(--secondary)" }}>
+            How Student Shark Tank Works
+          </h2>
         </Box>
         <SuccessSteps
           stepOneTitle="Submit Your Idea"

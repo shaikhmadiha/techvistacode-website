@@ -9,8 +9,10 @@ const CompetitionsHowTo = ({ sectionID }) => {
     <section id={sectionID} className={styles.competitionsHowToSection}>
       <Container className="container-y-padding">
         <Box textAlign={"center"}>
-          <span className="overlineText">Learn</span>
-          <h2>How To Prepare</h2>
+          <span className="overlineText" style={{ color: "var(--secondary)" }}>
+            Learn
+          </span>
+          <h2 style={{ color: "var(--secondary)" }}>How To Prepare</h2>
         </Box>
         <SuccessSteps
           stepOneTitle="Understand the Rules"

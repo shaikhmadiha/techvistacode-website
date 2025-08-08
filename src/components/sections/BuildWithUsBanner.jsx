@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Box, Stack } from "@mui/material";
+
 import { TiArrowRightOutline } from "react-icons/ti";
 
 import Container from "@/components/layout/Container";

@@ -2,7 +2,7 @@
 
 import { Button, Stack, TextField } from "@mui/material";
 
-const StudentSharkTankRegistration = () => {
+const StudentSharkTankRegistration = ({ themeColor }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -13,6 +13,7 @@ const StudentSharkTankRegistration = () => {
     <form onSubmit={handleSubmit}>
       <Stack spacing={2} textAlign={"center"}>
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="name"
@@ -22,6 +23,7 @@ const StudentSharkTankRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="email"
@@ -31,6 +33,7 @@ const StudentSharkTankRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="phone"
@@ -40,6 +43,7 @@ const StudentSharkTankRegistration = () => {
           variant="outlined"
         />
         <TextField
+          color={themeColor}
           required
           margin="dense"
           id="idea"
@@ -51,7 +55,12 @@ const StudentSharkTankRegistration = () => {
           multiline
           rows={4}
         />
-        <Button disableElevation variant="contained" type="submit">
+        <Button
+          color={themeColor}
+          disableElevation
+          variant="contained"
+          type="submit"
+        >
           Pitch!
         </Button>
       </Stack>
