@@ -140,6 +140,22 @@ export const testimonials = [
       "My internship at TechVistaCode was more than just a learning experience — it was a journey of growth. I was exposed to real tasks, deadlines, and collaboration that made me industry-ready. The mentorship I received helped me refine my skills and understand how to apply them in the real world. I entered as a learner and left with clarity, confidence, and purpose.",
     rating: 5,
   },
+  {
+    profilePicture: "/testimonials/aashish.jpg",
+    name: "Aashish Atre",
+    subTitle: "Top Performer Intern",
+    review:
+      "Honored to be recognized as the ‘Star Intern’—thank you TechVistaCode for this amazing journey.",
+    rating: 5,
+  },
+  {
+    profilePicture: "/testimonials/simra.jpg",
+    name: "Simra Saudagar",
+    subTitle: "Top Performer Intern",
+    review:
+      "Proud to be the ‘Top Performer’—thank you TechVistaCode for the guidance and opportunities.",
+    rating: 5,
+  },
 ];
 
 export const highlights = [

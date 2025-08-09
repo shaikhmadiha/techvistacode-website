@@ -2,14 +2,48 @@
 
 import { useState } from "react";
 
-import { Button, MenuItem, Stack, TextField } from "@mui/material";
+import {
+  Button,
+  DialogActions,
+  MenuItem,
+  Stack,
+  TextField,
+} from "@mui/material";
 
-import { durationOptionsInternshipsRegister } from "@/constants/internshipsContent";
+import { contactUsFormSchema } from "@/validations/contactUsFormSchema";
+import { contactUsRegistrationAction } from "@/actions/contactUsRegistrationAction";
 
-import { internshipFormSchema } from "@/validations/internshipFormSchema";
-import { internshipRegistrationAction } from "@/actions/internshipRegistrationAction";
+const bestTimeToReachYou = [
+  {
+    label: "Morning",
+    value: "morning",
+  },
+  {
+    label: "Afternoon",
+    value: "afternoon",
+  },
+  {
+    label: "Evening",
+    value: "evening",
+  },
+  {
+    label: "Night",
+    value: "night",
+  },
+];
 
-const InternshipsRegistration = ({ themeColor = "primary" }) => {
+const contactChoice = [
+  {
+    label: "Email",
+    value: "email",
+  },
+  {
+    label: "Phone",
+    value: "phone",
+  },
+];
+
+const GetFreeSessionRegistration = ({ themeColor, handleClose }) => {
   const [formErrors, setFormErrors] = useState({});
   const [formLoading, setFormLoading] = useState(false);
 
@@ -25,7 +59,7 @@ const InternshipsRegistration = ({ themeColor = "primary" }) => {
       setFormErrors({});
 
       // Validate using the imported Zod schema
-      const validationResult = internshipFormSchema.safeParse(formJson);
+      const validationResult = contactUsFormSchema.safeParse(formJson);
 
       if (!validationResult.success) {
         // Map Zod validation errors to formErrors state using forEach
@@ -42,7 +76,7 @@ const InternshipsRegistration = ({ themeColor = "primary" }) => {
       }
 
       // Proceed to server action if validation passes
-      const res = await internshipRegistrationAction(validationResult.data);
+      const res = await contactUsRegistrationAction(validationResult.data);
 
       // Check for a success flag from the server response
       if (res.success) {
@@ -60,12 +94,13 @@ const InternshipsRegistration = ({ themeColor = "primary" }) => {
     } finally {
       // Always stop the loading state
       setFormLoading(false);
+      handleClose();
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <Stack spacing={2} textAlign={"center"}>
+      <Stack spacing={2} pt={1} textAlign={"center"}>
         <TextField
           color={themeColor}
           required
@@ -106,44 +141,83 @@ const InternshipsRegistration = ({ themeColor = "primary" }) => {
           color={themeColor}
           required
           margin="dense"
-          id="course"
-          name="course"
-          label="Course"
+          id="city"
+          name="city"
+          label="City"
           type="text"
           variant="outlined"
-          error={!!formErrors.course}
-          helperText={formErrors.course}
+          error={!!formErrors.city}
+          helperText={formErrors.city}
+        />
+        <TextField
+          color={themeColor}
+          required
+          margin="dense"
+          id="message"
+          name="message"
+          label="Message"
+          type="text"
+          variant="outlined"
+          placeholder="Write your message here..."
+          multiline
+          rows={4}
+          error={!!formErrors.message}
+          helperText={formErrors.message}
         />
         <TextField
           color={themeColor}
           margin="dense"
-          id="internshipDuration"
-          name="internshipDuration"
+          id="time"
+          name="time"
           select
-          label="Select Duration"
-          defaultValue="2-months"
-          error={!!formErrors.internshipDuration}
-          helperText={formErrors.internshipDuration}
+          label="Select Best Time To Contact"
+          defaultValue="morning"
+          error={!!formErrors.time}
+          helperText={formErrors.time}
         >
-          {durationOptionsInternshipsRegister.map((option) => (
+          {bestTimeToReachYou.map((option) => (
             <MenuItem key={option.value} value={option.value}>
               {option.label}
             </MenuItem>
           ))}
         </TextField>
-        <Button
+        <TextField
           color={themeColor}
-          disableElevation
-          variant="contained"
-          type="submit"
-          loading={formLoading}
-          loadingIndicator="Submitting..."
+          margin="dense"
+          id="choice"
+          name="choice"
+          select
+          label="Select Contact Method"
+          defaultValue="email"
+          error={!!formErrors.choice}
+          helperText={formErrors.choice}
         >
-          Apply
-        </Button>
+          {contactChoice.map((option) => (
+            <MenuItem key={option.value} value={option.value}>
+              {option.label}
+            </MenuItem>
+          ))}
+        </TextField>
+
+        <DialogActions>
+          <Button onClick={handleClose} fullWidth>
+            Cancel
+          </Button>
+          <Button
+            color={themeColor}
+            disableElevation
+            variant="contained"
+            type="submit"
+            loading={formLoading}
+            loadingIndicator="Submitting..."
+            fullWidth
+          >
+            Submit
+          </Button>
+        </DialogActions>
       </Stack>
     </form>
   );
 };
 
-export default InternshipsRegistration;
+export default GetFreeSessionRegistration;

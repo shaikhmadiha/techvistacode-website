@@ -21,6 +21,9 @@ import TVCBot from "../../../public/TVC-Bot.svg";
 
 import styles from "@/styles/components/Chatbox.module.css";
 
+import { aiAssistFormSchema } from "@/validations/aiAssistFormSchema";
+import { aiAssistRegistrationAction } from "@/actions/aiAssistRegistrationAction";
+
 const ChatBox = () => {
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState("");
@@ -112,25 +115,78 @@ const ChatBox = () => {
     }, 500);
   };
 
-  const handleFormSubmit = () => {
+  // const handleFormSubmit = async () => {
+  //   // Ensure required fields are filled out
+  //   if (!formData.email || !formData.phone || !formData.message) return;
+
+  //   const finalData = {
+  //     name,
+  //     userType,
+  //     interest,
+  //     email: formData.email,
+  //     phone: formData.phone,
+  //     message: formData.message,
+  //   };
+
+  //   // Add user's form submission message
+  //   addMessage("Submitted Request", "user");
+
+  //   try {
+  //     // Call the server-side action to handle registration
+  //     const response = await aiAssistRegistrationAction(finalData);
+  //     setTimeout(() => {
+  //       if (response.success) {
+  //         addMessage("Thank you! We will connect with you shortly.");
+  //       }
+  //       setIsSubmitted(true);
+  //     }, 500);
+  //   } catch (error) {
+  //     console.error("Error during submission:", error);
+  //     addMessage("Oops! Something went wrong. Please try again.", "bot");
+  //   }
+  // };
+
+  const handleFormSubmit = async () => {
+    // Ensure required fields are filled out
     if (!formData.email || !formData.phone || !formData.message) return;
 
-    // Collect all final data
     const finalData = {
       name,
       userType,
       interest,
-      email,
-      phone,
-      message,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
     };
 
+    // Validate form data with Zod schema
+    const validationResult = aiAssistFormSchema.safeParse(finalData);
+
+    if (!validationResult.success) {
+      // If validation fails, show an alert with error messages
+      const errorMessages = validationResult.error.issues.map(
+        (issue) => issue.message
+      );
+      alert(errorMessages.join("\n")); // Show error messages in an alert box
+      return;
+    }
+
+    // Add user's form submission message
     addMessage("Submitted form", "user");
 
-    setTimeout(() => {
-      addMessage("Thank you! We will connect with you shortly.");
-      setIsSubmitted(true);
-    }, 500);
+    try {
+      // Call the server-side action to handle registration
+      const response = await aiAssistRegistrationAction(finalData);
+      setTimeout(() => {
+        if (response.success) {
+          addMessage("Thank you! We will connect with you shortly.");
+        }
+        setIsSubmitted(true);
+      }, 500);
+    } catch (error) {
+      console.error("Error during submission:", error);
+      addMessage("Oops! Something went wrong. Please try again.", "bot");
+    }
   };
 
   const handleFormChange = (e) => {

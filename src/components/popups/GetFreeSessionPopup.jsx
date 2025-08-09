@@ -1,10 +1,9 @@
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+
+import GetFreeSessionRegistration from "@/components/forms/GetFreeSessionRegistration";
 
 export default function GetFreeSessionPopup({
   variant,
@@ -17,15 +16,6 @@ export default function GetFreeSessionPopup({
 }) {
   const handleClose = () => {
     setOpen(false);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const formJson = Object.fromEntries(formData.entries());
-    const email = formJson.email;
-    console.log(email);
-    handleClose();
   };
 
   return (
@@ -45,29 +35,12 @@ export default function GetFreeSessionPopup({
         {title}
       </Button>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Subscribe</DialogTitle>
-        <DialogContent sx={{ paddingBottom: 0 }}>
-          <DialogContentText>
-            To subscribe to this website, please enter your email address here.
-            We will send updates occasionally.
-          </DialogContentText>
-          <form onSubmit={handleSubmit}>
-            <TextField
-              autoFocus
-              required
-              margin="dense"
-              id="name"
-              name="email"
-              label="Email Address"
-              type="email"
-              fullWidth
-              variant="standard"
-            />
-            <DialogActions>
-              <Button onClick={handleClose}>Cancel</Button>
-              <Button type="submit">Subscribe</Button>
-            </DialogActions>
-          </form>
+        <DialogTitle color="secondary">Get Free Consultation</DialogTitle>
+        <DialogContent sx={{ pb: 2, minWidth: { lg: 512, sm: 480, xs: 320 } }}>
+          <GetFreeSessionRegistration
+            themeColor={"secondary"}
+            handleClose={handleClose}
+          />
         </DialogContent>
       </Dialog>
     </>
