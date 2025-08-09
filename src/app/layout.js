@@ -4,6 +4,7 @@ import { ThemeProvider } from "@mui/material";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ChatBox from "@/components/popups/ChatBox";
+import Credit from "@/components/layout/Credit";
 
 import theme from "@/theme/theme";
 
@@ -68,6 +69,7 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
           <Footer />
           <ChatBox />
+          <Credit />
         </ThemeProvider>
       </body>
     </html>

@@ -141,7 +141,7 @@ export const testimonials = [
     rating: 5,
   },
   {
-    profilePicture: "/testimonials/aashish.jpg",
+    profilePicture: "/testimonials/aashish.webp",
     name: "Aashish Atre",
     subTitle: "Top Performer Intern",
     review:
@@ -149,7 +149,7 @@ export const testimonials = [
     rating: 5,
   },
   {
-    profilePicture: "/testimonials/simra.jpg",
+    profilePicture: "/testimonials/simra.webp",
     name: "Simra Saudagar",
     subTitle: "Top Performer Intern",
     review:

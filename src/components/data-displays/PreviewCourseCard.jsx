@@ -10,7 +10,7 @@ const PreviewCourseCard = ({
 }) => {
   return (
     <Card
-      sx={{ maxWidth: 360, borderRadius: "var(--medium-rounded)" }}
+      sx={{ borderRadius: "var(--medium-rounded)" }}
       elevation={0}
     >
       <CardMedia sx={{ height: 240 }} image={poster} title={posterAlt} />

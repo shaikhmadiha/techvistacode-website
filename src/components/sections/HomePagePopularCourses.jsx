@@ -14,15 +14,10 @@ const HomePagePopularCourses = ({ sectionID }) => {
     <section id={sectionID} className={styles.popularCoursesSection}>
       <Container className="container-y-padding">
         <Box textAlign={"center"}>
-          <span
-            className="overlineText"
-            style={{ color: "var(--secondary)" }}
-          >
+          <span className="overlineText" style={{ color: "var(--secondary)" }}>
             Chosen by thousands
           </span>
-          <h2 style={{ color: "var(--secondary)" }}>
-            Courses You’ll Love
-          </h2>
+          <h2 style={{ color: "var(--secondary)" }}>Courses You’ll Love</h2>
         </Box>
         <Grid container my={4} spacing={2}>
           {previewCourseCards.map((previewCourse, index) => (
