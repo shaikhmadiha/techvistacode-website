@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics";
+
 import { Outfit } from "next/font/google";
 import { ThemeProvider } from "@mui/material";
 
@@ -71,6 +73,7 @@ export default function RootLayout({ children }) {
           <ChatBox />
           <Credit />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
