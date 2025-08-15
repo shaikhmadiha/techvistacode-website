@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics";
+import { Analytics } from "@vercel/analytics/next";
 
 import { Outfit } from "next/font/google";
 import { ThemeProvider } from "@mui/material";
